@@ -22,13 +22,13 @@
 
 **4. Vector ― We note x∈Rn a vector with n entries, where xi∈R is the ith entry:**
 
-&#10230; Вектор ― Мы обозначаем x∈Rn вектор с n элементами, где xi∈R∈i-й элемент:
+&#10230; Вектор ― Мы обозначаем x∈Rn вектор с n элементами, где xi∈R∈ i-й элемент:
 
 <br>
 
 **5. Matrix ― We note A∈Rm×n a matrix with m rows and n columns, where Ai,j∈R is the entry located in the ith row and jth column:**
 
-&#10230; Матрица ― Мы обозначаем A∈Rm×n матрица с m строками и n столбцами, где Ai, j∈R - запись, расположенная в i-й строке и j-м столбце:
+&#10230; Матрица ― Мы обозначаем A∈Rm×n матрица с m строками и n столбцами, где Ai,j∈R - запись, расположенная в i-й строке и j-м столбце:
 
 <br>
 
@@ -136,7 +136,7 @@
 
 **23. Remark: for matrices A,B, we have (AB)T=BTAT**
 
-&#10230; Примечание: для матриц A, B имеем (AB)T=BTAT
+&#10230; Примечание: для матриц A,B имеем (AB)T=BTAT
 
 <br>
 
@@ -148,7 +148,7 @@
 
 **25. Remark: not all square matrices are invertible. Also, for matrices A,B, we have (AB)−1=B−1A−1**
 
-&#10230; Примечание: не все квадратные матрицы обратимы. Также для матриц A, B мы имеем (AB)−1=B−1A−1
+&#10230; Примечание: не все квадратные матрицы обратимы. Также для матриц A,B, мы имеем (AB)−1=B−1A−1
 
 <br>
 
@@ -160,7 +160,7 @@
 
 **27. Remark: for matrices A,B, we have tr(AT)=tr(A) and tr(AB)=tr(BA)**
 
-&#10230; Примечание: для матриц A, B имеем tr(AT)=tr(A) и tr(AB)=tr(BA)
+&#10230; Примечание: для матриц A,B имеем tr(AT)=tr(A) и tr(AB)=tr(BA)
 
 <br>
 
@@ -202,7 +202,7 @@
 
 **34. Norm ― A norm is a function N:V⟶[0,+∞[ where V is a vector space, and such that for all x,y∈V, we have:**
 
-&#10230; Норма ― Норма - это функция N:V⟶[0,+∞[ где V - векторное пространство, и такая, что для всех x,y∈V, у нас есть:
+&#10230; Норма ― Норма - это функция N:V⟶[0,+∞[ где V - векторное пространство, и такая, что для всех x,y∈V, есть:
 
 <br>
 

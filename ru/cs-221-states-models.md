@@ -193,7 +193,7 @@
 
 **28. Uniform cost search ― Uniform cost search (UCS) is a search algorithm that aims at finding the shortest path from a state sstart to an end state send. It explores states s in increasing order of PastCost(s) and relies on the fact that all action costs are non-negative.**
 
-&#10230; Uniform cost search (UCS) ― Поиск по единой стоимости - это алгоритм поиска, который направлен на поиск кратчайшего пути от состояния sstart до конечного состояния send. Он исследует состояния в порядке возрастания PastCost(-ов) и полагается на тот факт, что все затраты на действия неотрицательны.
+&#10230; Uniform cost search (UCS) ― Поиск по единой стоимости - это алгоритм поиска, который направлен на поиск кратчайшего пути от состояния sstart до конечного состояния send. Он исследует состояния в порядке возрастания PastCost(s) и полагается на тот факт, что все затраты на действия неотрицательны.
 
 <br>
 
@@ -214,7 +214,7 @@
 
 **31. Correctness theorem ― When a state s is popped from the frontier F and moved to explored set E, its priority is equal to PastCost(s) which is the minimum cost path from sstart to s.**
 
-&#10230; Теорема корректности ― Когда состояние s выталкивается из границы F и перемещается в исследуемый набор E, его приоритет равен PastCost(-ам), который представляет собой путь с минимальной стоимостью от sstart до s.
+&#10230; Теорема корректности ― Когда состояние s выталкивается из границы F и перемещается в исследуемый набор E, его приоритет равен PastCost(s), который представляет собой путь с минимальной стоимостью от sstart до s.
 
 <br>
 
@@ -452,7 +452,7 @@
 
 **65. Policy ― A policy π is a function that maps each state s to an action a, i.e.**
 
-&#10230; Политика ― Политика π - это функция, которая сопоставляет каждое состояние s с действием a, т.е.
+&#10230; Политика ― Политика π - это функция, которая сопоставляет каждое состояние s с действием a, то есть
 
 <br>
 
@@ -543,7 +543,7 @@
 
 **78. [Value iteration ― Value iteration is an algorithm that finds the optimal value Vopt as well as the optimal policy πopt. It is done as follows:, Initialization: for all states s, we have:, Iteration: for t from 1 to TVI, we have:, with]**
 
-&#10230; [Итерация ценности ― Итерация ценности - это алгоритм, который находит оптимальное значение Vopt, а также оптимальную политику πopt. Делается это следующим образом:, Инициализация: для всех состояний s имеем:, Итерация: для t от 1 до TVI имеем:, с]
+&#10230; [Итерация ценности ― Итерация ценности - это ищущий оптимальное значение Vopt и оптимальную политику πopt алгоритм. Делается это следующим образом:, Инициализация: для всех состояний s, имеем:, Итерация: для t от 1 до TVI, имеем:, с]
 
 <br>
 
@@ -585,7 +585,7 @@
 
 **84. These estimations will be then used to deduce Q-values, including Qπ and Qopt.**
 
-&#10230; Эти оценки затем будут использоваться для вывода значений Q, включая Qπ и Qopt.
+&#10230; Эти оценки затем будут использоваться для вывода Q-ценностей, включая Qπ и Qopt.
 
 <br>
 
@@ -802,14 +802,14 @@
 
 **115. Alpha-beta pruning ― Alpha-beta pruning is a domain-general exact method optimizing the minimax algorithm by avoiding the unnecessary exploration of parts of the game tree. To do so, each player keeps track of the best value they can hope for (stored in α for the maximizing player and in β for the minimizing player). At a given step, the condition β<α means that the optimal path is not going to be in the current branch as the earlier player had a better option at their disposal.**
 
-&#10230; Альфа-бета обрезка ― Альфа-бета обрезка - это общий для предметной области точный метод, оптимизирующий алгоритм минимакса, избегая ненужного исследования частей игрового дерева. Для этого каждый игрок отслеживает наилучшее значение, на которое он может надеяться (сохраняется в α для максимизирующего игрока и в β для минимизирующего игрока). На данном шаге условие β<α означает, что оптимальный путь не будет в текущей ветви, поскольку у более раннего игрока был лучший вариант в своем распоряжении.
+&#10230; Альфа-бета обрезка ― Alpha-beta pruning - это общий для предметной области точный метод, оптимизирующий алгоритм минимакса, избегая ненужного исследования частей игрового дерева. Для этого каждый игрок отслеживает наилучшее значение, на которое он может надеяться (сохраняется в α для максимизирующего игрока и в β для минимизирующего игрока). На данном шаге условие β<α означает, что оптимальный путь не будет в текущей ветви, поскольку у более раннего игрока был лучший вариант в своем распоряжении.
 
 <br>
 
 
 **116. TD learning ― Temporal difference (TD) learning is used when we don't know the transitions/rewards. The value is based on exploration policy. To be able to use it, we need to know rules of the game Succ(s,a). For each (s,a,r,s′), the update is done as follows:**
 
-&#10230; Обучение (Temporal difference TD) ― Обучение временной разнице используется, когда мы не знаем переходов/наград. Значение основано на политике разведки. Чтобы использовать его, нам необходимо знать правила игры Succ(s,a). Для каждого (s,a,r,s′) обновление выполняется следующим образом:
+&#10230; Обучение временной разнице ― Обучение Temporal difference (TD) используется, когда мы не знаем переходов/наград. Значение основано на политике разведки. Чтобы использовать его, нам необходимо знать правила игры Succ(s,a). Для каждого (s,a,r,s′) обновление выполняется следующим образом:
 
 <br>
 
@@ -851,7 +851,7 @@
 
 **122. Minimax theorem ― By noting πA,πB ranging over mixed strategies, for every simultaneous two-player zero-sum game with a finite number of actions, we have:**
 
-&#10230; Minimax теорема ― Положим, что πA, πB пробегают по смешанным стратегиям для любой одновременной игры двух игроков с нулевой суммой и конечного числа действий, у нас есть:
+&#10230; Minimax теорема ― Положим, что πA,πB пробегают по смешанным стратегиям для любой одновременной игры двух игроков с нулевой суммой и конечного числа действий, у нас есть:
 
 <br>
 

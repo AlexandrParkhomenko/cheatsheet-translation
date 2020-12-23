@@ -67,7 +67,7 @@
 
 **10. Constraint satisfaction problem ― A constraint satisfaction problem (CSP) is a factor graph where all factors are binary; we call them to be constraints:**
 
-&#10230; Задачи удовлетворения ограничений ― A constraint satisfaction problem (CSP) - факторный граф, в котором все факторы бинарны; мы называем их ограничениями:
+&#10230; Задачи удовлетворения ограничений ― Сonstraint satisfaction problem (CSP) - факторный граф, в котором все факторы бинарны; мы называем их ограничениями:
 
 <br>
 
@@ -102,14 +102,14 @@
 
 **15. Backtracking search ― Backtracking search is an algorithm used to find maximum weight assignments of a factor graph. At each step, it chooses an unassigned variable and explores its values by recursion. Dynamic ordering (i.e. choice of variables and values) and lookahead (i.e. early elimination of inconsistent options) can be used to explore the graph more efficiently, although the worst-case runtime stays exponential: O(|Domain|n).**
 
-&#10230; Поиск с возвратом ― Поиск с возвратом - это алгоритм, используемый для нахождения максимального веса факторного графа. На каждом этапе он выбирает неназначенную переменную и исследует её значения с помощью рекурсии. Динамическое упорядочение (то есть выбор переменных и значений) и опережение (то есть раннее устранение несовместимых вариантов) могут использоваться для более эффективного изучения графика, хотя время выполнения в худшем случае остается экспоненциальным: O(|Domain|n).
+&#10230; Поиск с возвратом ― Backtracking search - это алгоритм, используемый для нахождения максимального веса факторного графа. На каждом этапе он выбирает неназначенную переменную и исследует её значения с помощью рекурсии. Динамическое упорядочение (то есть выбор переменных и значений) и опережение (то есть раннее устранение несовместимых вариантов) могут использоваться для более эффективного изучения графика, хотя время выполнения в худшем случае остается экспоненциальным: O(|Domain|n).
 
 <br>
 
 
 **16. [Forward checking ― It is a one-step lookahead heuristic that preemptively removes inconsistent values from the domains of neighboring variables. It has the following characteristics:, After assigning a variable Xi, it eliminates inconsistent values from the domains of all its neighbors., If any of these domains becomes empty, we stop the local backtracking search., If we un-assign a variable Xi, we have to restore the domain of its neighbors.]**
 
-&#10230; [Прямая проверка ― это эвристика упреждающего просмотра за один шаг, которая упреждающе удаляет несогласованные значения из доменов соседних переменных. Она имеет следующие характеристики:, После присвоения переменной Xi она удаляет несовместимые значения из доменов всех своих соседей., Если какой-либо из этих доменов становится пустым, мы останавливаем локальный поиск с возвратом., Если мы отменим присвоение переменной Xi, мы должны восстановить домен её соседей.]
+&#10230; [Прямая проверка ― это эвристика упреждающего просмотра за один шаг. Она упреждающе удаляет несогласованные значения из доменов соседних переменных. Она имеет следующие характеристики:, После присвоения переменной Xi она удаляет несовместимые значения из доменов всех своих соседей., Если какой-либо из этих доменов становится пустым, мы останавливаем локальный поиск с возвратом., Если мы отменим присвоение переменной Xi, мы должны восстановить домен её соседей.]
 
 <br>
 
@@ -144,7 +144,7 @@
 
 **21. [Arc consistency ― We say that arc consistency of variable Xl with respect to Xk is enforced when for each xl∈Domainl:, unary factors of Xl are non-zero, there exists at least one xk∈Domaink such that any factor between Xl and Xk is non-zero.]**
 
-&#10230; [Согласованность дуги ― мы говорим, что непротиворечивость дуги переменной Xl относительно Xk обеспечивается, когда для каждого xl∈Domainl:, унарные множители Xl не равны нулю, существует по крайней мере один xk∈Domaink такой, что любой множитель между Xl и Xk отличен от нуля.]
+&#10230; [Согласованность дуги ― Мы говорим о непротиворечивости дуги переменной Xl относительно Xk при обеспечении для каждого xl∈Domainl:, унарные множители Xl не равны нулю, существует по крайней мере один xk∈Domaink. Для него любой множитель между Xl и Xk отличен от нуля.]
 
 <br>
 
@@ -228,7 +228,7 @@
 
 **33. Independence ― Let A,B be a partitioning of the variables X. We say that A and B are independent if there are no edges between A and B and we write:**
 
-&#10230; Независимость ― Пусть A, B - разбиение переменных X. Мы говорим, что A и B независимы, если между A и B нет ребер, и пишем:
+&#10230; Независимость ― Пусть A,B - разбиение переменных X. Мы говорим, что A и B независимы, если между A и B нет ребер, и пишем:
 
 <br>
 
@@ -473,7 +473,7 @@
 
 **68. [Gibbs sampling ― This algorithm is an iterative approximate method that uses a small set of assignments (particles) to represent a large probability distribution. From a random assignment x, Gibbs sampling performs the following steps for i∈{1,...,n} until convergence:, For all u∈Domaini, compute the weight w(u) of assignment x where Xi=u, Sample v from the probability distribution induced by w: v∼P(Xi=v|X−i=x−i), Set Xi=v]**
 
-&#10230; [Выборка по Гиббсу ― Этот алгоритм представляет собой итеративный приближенный метод, который использует небольшой набор назначений (частиц) для представления большого распределения вероятностей. Из случайного присвоения x, Выборка по Гиббсу выполняет следующие шаги для i∈{1,...,n} до сходимости:, Для всех u∈Domaini вычислить вес w(u) присвоения x; где Xi=u, Произвести выборку v из распределения вероятностей, индуцированного w: v∼P(Xi=v|X−i=x−i), установить Xi=v]
+&#10230; [Выборка по Гиббсу ― Этот алгоритм представляет собой итеративный приближенный метод. Он использует небольшой набор назначений (частиц) для представления большого распределения вероятностей. Из случайного присвоения x, Выборка по Гиббсу выполняет следующие шаги для i∈{1,...,n} до сходимости:, Для всех u∈Domaini, вычислить вес w(u) присвоения x; где Xi=u, Произвести выборку v из индуцированного w распределения вероятностей: v∼P(Xi=v|X−i=x−i), Установить Xi=v]
 
 <br>
 
@@ -508,7 +508,7 @@
 
 **73. Laplace smoothing ― For each distribution d and partial assignment (xParents(i),xi), add λ to countd(xParents(i),xi), then normalize to get probability estimates.**
 
-&#10230; Сглаживание Лапласа ― для каждого распределения d и частичного присвоения (xParents(i),xi) добавьте λ к countd(xParents(i), xi), затем нормализуйте, чтобы получить оценки вероятности.
+&#10230; Сглаживание Лапласа ― для каждого распределения d и частичного присвоения (xParents(i),xi) добавьте λ к countd(xParents(i),xi), затем нормализуйте, чтобы получить оценки вероятности.
 
 <br>
 

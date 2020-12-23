@@ -312,7 +312,7 @@
 
 **45. [ReLU, Leaky ReLU, ELU, with]**
 
-&#10230; [ReLU, Leaky ReLU, ELU, с]
+&#10230; [ReLU, ReLU с утечкой, ELU, с]
 
 <br>
 
@@ -403,7 +403,7 @@
 
 **58. [Box of center (bx,by), height bh and width bw, Reference points (l1x,l1y), ..., (lnx,lny)]**
 
-&#10230; [Рамка с центром (bx, by), высота bh и ширина bw, Ориентиры (l1x,l1y), ..., (lnx,lny)]
+&#10230; [Рамка с центром (bx,by), высота bh и ширина bw, Ориентиры (l1x,l1y), ..., (lnx,lny)]
 
 <br>
 
@@ -592,7 +592,7 @@
 
 **85. Content cost function ― The content cost function Jcontent(C,G) is used to determine how the generated image G differs from the original content image C. It is defined as follows:**
 
-&#10230; Функция стоимости контента ― Функция стоимости контента Jcontent(C, G) используется для определения того, как сгенерированное изображение G отличается от исходного изображения C контента. Оно определяется следующим образом:
+&#10230; Функция стоимости контента ― Функция стоимости контента Jcontent(C,G) используется для определения того, как сгенерированное изображение G отличается от исходного изображения C контента. Оно определяется следующим образом:
 
 <br>
 
@@ -641,7 +641,7 @@
 
 **92. Generative Adversarial Network ― Generative adversarial networks, also known as GANs, are composed of a generative and a discriminative model, where the generative model aims at generating the most truthful output that will be fed into the discriminative which aims at differentiating the generated and true image.**
 
-&#10230; Генеративная состязательная сеть ― Generative adversarial networks, также известные как GANs, состоят из генеративной и дискриминативной моделей, где генеративная модель направлена на генерирование наиболее правдивого вывода, который будет передан дискриминативной модели, направленной на различение созданного и истинного изображения.
+&#10230; Генеративные состязательные сети ― Generative adversarial networks, также известные как GANs, состоят из генеративной и дискриминативной моделей, где генеративная модель направлена на генерирование наиболее правдивого вывода, который будет передан дискриминативной модели, направленной на различение созданного и истинного изображения.
 
 <br>
 
