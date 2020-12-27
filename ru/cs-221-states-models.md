@@ -16,7 +16,7 @@
 <br>
 
 
-**3. In this section, we assume that by accomplishing action a from state s, we deterministically arrive in state Succ(s,a). The goal here is to determine a sequence of actions (a1,a2,a3,a4,...) that starts from an initial state and leads to an end state. In order to solve this kind of problem, our objective will be to find the minimum cost path by using states-based models.**
+**3. In this section, we assume that by accomplishing action a from state s, we deterministically arrive in state Succ(s,a). The goal here is to determine sequence of actions (a1,a2,a3,a4,...) that starts from an initial state and leads to an end state. In order to solve this kind of problem, our objective will be to find the minimum cost path by using states-based models.**
 
 &#10230; В этом разделе мы предполагаем, что, выполняя действие a из состояния s, мы детерминированно приходим в состояние Succ(s,a). Здесь цель - определить последовательность действий (a1,a2,a3,a4,...) которая начинается из начального состояния и приводит к конечному состоянию. Для решения задачи нам надо найти путь с минимальными затратами, с помощью моделей на основе состояний.
 
@@ -44,9 +44,21 @@
 <br>
 
 
-**7. [Search problem ― A search problem is defined with:, a starting state sstart, possible actions Actions(s) from state s, action cost Cost(s,a) from state s with action a, successor Succ(s,a) of state s after action a, whether an end state was reached IsEnd(s)]**
+**7. [Search problem ― A search problem is defined with:, a starting state sstart, possible actions Actions(s) from state s, whether an end state was reached IsEnd(s)]**
 
-&#10230; [Задача поиска ― определяется с помощью:, начальное состояние sstart, возможные действия Actions(s) из состояния s, стоимость действия Cost(s,a) из состояния s с действием a, преемник Succ(s,a) состояния s после действия a, было ли достигнуто конечное состояние IsEnd(s)]
+&#10230; [Задача поиска ― определяется с помощью:, начальное состояние sstart, возможные действия Actions(s) из состояния s, было ли достигнуто конечное состояние IsEnd(s)]
+
+<br>
+
+**700. action cost Cost(s,a) from state s with action a**
+
+&#10230; стоимость действия Cost(s,a) из состояния s с действием a
+
+<br>
+
+**701. successor Succ(s,a) of state s after action a**
+
+&#10230; преемник Succ(s,a) состояния s после действия a
 
 <br>
 
@@ -268,7 +280,7 @@
 <br>
 
 
-**39. Remark: there are several versions of the algorithm, one of which simplifies the problem to only learning the cost of each action a, and the other parametrizes Cost(s,a) to a feature vector of learnable weights.**
+**39. Remark: there are several versions of the algorithm, one of which simplifies the problem to only learning the cost of each action a, and the other parametrizes Cost(s,a) to feature vector of learnable weights.**
 
 &#10230; Примечание: существует несколько версий алгоритма, одна из которых упрощает задачу до изучения только стоимости каждого действия a, другая параметризует Cost(s,a) вектором характеристик обучаемых весов.
 
@@ -289,9 +301,9 @@
 <br>
 
 
-**42. Algorithm ― A∗ is a search algorithm that aims at finding the shortest path from a state s to an end state send. It explores states s in increasing order of PastCost(s)+h(s). It is equivalent to a uniform cost search with edge costs Cost′(s,a) given by:**
+**42. Algorithm ― A^* is a search algorithm that aims at finding the shortest path from a state s to an end state send. It explores states s in increasing order of PastCost(s)+h(s). It is equivalent to a uniform cost search with edge costs Cost'(s,a) given by:**
 
-&#10230; Алгоритм ― A∗ - это алгоритм поиска, цель которого - найти кратчайший путь от состояния s до конечного состояния send. Он исследует состояния в порядке возрастания PastCost(s)+h(s). Это эквивалентно поиску по единой стоимости с краевыми затратами Cost′(s,a), задаваемыми выражением:
+&#10230; Алгоритм ― A^* - это алгоритм поиска, цель которого - найти кратчайший путь от состояния s до конечного состояния send. Он исследует состояния в порядке возрастания PastCost(s)+h(s). Это эквивалентно поиску по единой стоимости с краевыми затратами Cost'(s,a), задаваемыми выражением:
 
 <br>
 
@@ -310,9 +322,9 @@
 <br>
 
 
-**45. Correctness ― If h is consistent, then A∗ returns the minimum cost path.**
+**45. Correctness ― If h is consistent, then A^* returns the minimum cost path.**
 
-&#10230; Корректность ― Если h согласован, то A∗ возвращает путь с минимальной стоимостью.
+&#10230; Корректность ― Если h согласован, то A^* возвращает путь с минимальной стоимостью.
 
 <br>
 
@@ -338,9 +350,9 @@
 <br>
 
 
-**49. Efficiency ― A* explores all states s satisfying the following equation:**
+**49. Efficiency ― A^* explores all states s satisfying the following equation:**
 
-&#10230; Эффективность ― A* исследует все состояния s, удовлетворяющие следующему уравнению:
+&#10230; Эффективность ― A^* исследует все состояния s, удовлетворяющие следующему уравнению:
 
 <br>
 
@@ -366,7 +378,7 @@
 <br>
 
 
-**53. Relaxed search problem ― The relaxation of search problem P with costs Cost is noted Prel with costs Costrel, and satisfies the identity:**
+**53. Relaxed search problem ― The relaxation of search problem P with costs Cost is denoted Prel with costs Costrel, and satisfies the identity:**
 
 &#10230; Задача с ослабленными ограничениями поиска ― Ослабление задачи поиска P с затратами Cost обозначается Prel с затратами Costrel и удовлетворяет тождеству:
 
@@ -415,9 +427,9 @@
 <br>
 
 
-**60. In this section, we assume that performing action a from state s can lead to several states s′1,s′2,... in a probabilistic manner. In order to find our way between an initial state and an end state, our objective will be to find the maximum value policy by using Markov decision processes that help us cope with randomness and uncertainty.**
+**60. In this section, we assume that performing action a from state s can lead to several states s1',s2',... in probabilistic manner. In order to find our way between an initial state and an end state, our objective will be to find the maximum value policy by using Markov decision processes that help us cope with randomness and uncertainty.**
 
-&#10230; В этом разделе мы предполагаем, что выполнение действия a из состояния s может привести к нескольким состояниям s′1,s′2,... вероятностным образом. Чтобы найти путь между начальным и конечным состояниями, наша цель будет заключаться в том, чтобы найти политику максимальной ценности с помощью марковских процессов принятия решений, которые помогают нам справляться со случайностью и неопределенностью.
+&#10230; В этом разделе мы предполагаем, что выполнение действия a из состояния s может привести к нескольким состояниям s1',s2',... вероятностным образом. Чтобы найти путь между начальным и конечным состояниями, наша цель будет заключаться в том, чтобы найти политику максимальной ценности с помощью марковских процессов принятия решений, которые помогают нам справляться со случайностью и неопределенностью.
 
 <br>
 
@@ -429,16 +441,28 @@
 <br>
 
 
-**62. [Definition ― The objective of a Markov decision process is to maximize rewards. It is defined with:, a starting state sstart, possible actions Actions(s) from state s, transition probabilities T(s,a,s′) from s to s′ with action a, rewards Reward(s,a,s′) from s to s′ with action a, whether an end state was reached IsEnd(s), a discount factor 0⩽γ⩽1]**
+**62. [Definition ― The objective of a Markov decision process is to maximize rewards. It is defined with:, a starting state sstart, possible actions Actions(s) from state s, transition probabilities T(s,a,s') from s to s' with action a, rewards Reward(s,a,s') from s to s' with action a, whether an end state was reached IsEnd(s), a discount factor 0⩽γ⩽1]**
 
-&#10230; [Определение ― Цель марковского процесса принятия решений - максимизировать вознаграждение. Он определяется с помощью:, начальное состояние sstart, возможные действия Actions(s) из состояния s, вероятности перехода T(s,a,s′) из s в s′ с действием a, награды Reward(s,a,s′) из s в s′ с действием a, было ли достигнуто конечное состояние IsEnd(s), коэффициент дисконтирования 0⩽γ⩽1]
+&#10230; [Определение ― Цель марковского процесса принятия решений - максимизировать вознаграждение. Он определяется с помощью:, начальное состояние sstart, возможные действия Actions(s) из состояния s, вероятности перехода T(s,a,s') из s в s' с действием a, награды Reward(s,a,s') из s в s' с действием a, было ли достигнуто конечное состояние IsEnd(s), коэффициент дисконтирования 0⩽γ⩽1]
+
+<br>
+
+**620. transition probabilities T(s,a,s') from s to s' with action a**
+
+&#10230; вероятности перехода T(s,a,s') из s в s' с действием a
+
+<br>
+
+**621. rewards Reward(s,a,s') from s to s' with action a**
+
+&#10230; награды Reward(s,a,s') из s в s' с действием a
 
 <br>
 
 
-**63. Transition probabilities ― The transition probability T(s,a,s′) specifies the probability of going to state s′ after action a is taken in state s. Each s′↦T(s,a,s′) is a probability distribution, which means that:**
+**63. Transition probabilities ― The transition probability T(s,a,s') specifies the probability of going to state s' after action a is taken in state s. Each s'↦T(s,a,s') is probability distribution, which means that:**
 
-&#10230; Вероятности перехода ― Вероятность перехода T(s,a,s′) определяет вероятность перехода в состояние s' после того, как действие a будет выполнено в состоянии s. Каждый s′↦T(s,a,s′) представляет собой распределение вероятностей, что означает, что:
+&#10230; Вероятности перехода ― Вероятность перехода T(s,a,s') определяет вероятность перехода в состояние s' после того, как действие a будет выполнено в состоянии s. Каждый s'↦T(s,a,s') представляет собой распределение вероятностей, что означает, что:
 
 <br>
 
@@ -450,7 +474,7 @@
 <br>
 
 
-**65. Policy ― A policy π is a function that maps each state s to an action a, i.e.**
+**65. Policy ― A policy π is function that maps each state s to an action a, i.e.**
 
 &#10230; Политика ― Политика π - это функция, которая сопоставляет каждое состояние s с действием a, то есть
 
@@ -471,14 +495,14 @@
 <br>
 
 
-**68. Q-value ― The Q-value of a policy π at state s with action a, also noted Qπ(s,a), is the expected utility from state s after taking action a and then following policy π. It is defined as follows:**
+**68. Q-value ― The Q-value of policy π at state s with action a, also denoted Qπ(s,a), is the expected utility from state s after taking action a and then following policy π. It is defined as follows:**
 
-&#10230; Q-ценность - Q-ценность политики π в состоянии s с действием a, также отмеченное Qπ(s,a), является ожидаемой полезностью из состояния s после выполнения действия a и последующего следования политике π. Это определяется следующим образом:
+&#10230; Q-ценность ― Q-ценность политики π в состоянии s с действием a, также отмеченное Qπ(s,a), является ожидаемой полезностью из состояния s после выполнения действия a и последующего следования политике π. Это определяется следующим образом:
 
 <br>
 
 
-**69. Value of a policy ― The value of a policy π from state s, also noted Vπ(s), is the expected utility by following policy π from state s over random paths. It is defined as follows:**
+**69. Value of policy ― The value of policy π from state s, also denoted Vπ(s), is the expected utility by following policy π from state s over random paths. It is defined as follows:**
 
 &#10230; Ценность политики ― Ценность политики π из состояния s, также обозначаемое как Vπ(s), является ожидаемой полезностью при следовании политике π из состояния s по случайным путям. Это определяется следующим образом:
 
@@ -499,23 +523,23 @@
 <br>
 
 
-**72. [Policy evaluation ― Given a policy π, policy evaluation is an iterative algorithm that aims at estimating Vπ. It is done as follows:, Initialization: for all states s, we have:, Iteration: for t from 1 to TPE, we have, with]**
+**72. [Policy evaluation ― Given policy π, policy evaluation is an iterative algorithm that aims at estimating Vπ. It is done as follows:, Initialization: for all states s, we have:, Iteration: for t from 1 to TPE, we have, with]**
 
 &#10230; [Оценка политики ― Задана политика π, оценка политики представляет собой итеративный алгоритм. Он нацелен на оценку Vπ. Делается это следующим образом:, Инициализация: для всех состояний s, имеем:, Итерация: для t от 1 до TPE, имеем, с]
 
 <br>
 
 
-**73. Remark: by noting S the number of states, A the number of actions per state, S′ the number of successors and T the number of iterations, then the time complexity is of O(TPESS′).**
+**73. Remark: by noting S the number of states, A the number of actions per state, S' the number of successors and T the number of iterations, then the time complexity is of O(TPESS').**
 
-&#10230; Примечание: обозначим S - количество состояний, A - количество действий на состояние, S′ - количество преемников и T - количество итераций, то временная сложность равна O(TPESS′).
+&#10230; Примечание: обозначим S - количество состояний, A - количество действий на состояние, S' - количество преемников и T - количество итераций, то временная сложность равна O(TPESS').
 
 <br>
 
 
-**74. Optimal Q-value ― The optimal Q-value Qopt(s,a) of state s with action a is defined to be the maximum Q-value attained by any policy starting. It is computed as follows:**
+**74. Optimal Q-value ― The optimal Q-value Qopt(s,a) of state s with action a is defined to be the maximum Q-value attained by any policy. It is computed as follows:**
 
-&#10230; Оптимальная Q-ценность ― Оптимальная Q-ценность Qopt(s,a) состояния s с действием a определяется как максимальная Q-ценность, достигаемая при запуске любой стратегии. Она рассчитывается следующим образом:
+&#10230; Оптимальная Q-ценность ― Оптимальная Q-ценность Qopt(s,a) состояния s с действием a определяется как максимальная Q-ценность, достигаемая при любой стратегии. Она рассчитывается следующим образом:
 
 <br>
 
@@ -569,16 +593,16 @@
 <br>
 
 
-**82. Model-based Monte Carlo ― The model-based Monte Carlo method aims at estimating T(s,a,s′) and Reward(s,a,s′) using Monte Carlo simulation with: **
+**82. Model-based Monte Carlo ― The model-based Monte Carlo method aims at estimating T(s,a,s') and Reward(s,a,s') using Monte Carlo simulation with:**
 
-&#10230; Основанный на модели Монте-Карло ― Основанный на модели метод Монте-Карло направлен на оценку T(s,a,s′) и Reward(s,a,s′) с использованием моделирования Монте-Карло с: 
+&#10230; Основанный на модели Монте-Карло ― Основанный на модели метод Монте-Карло направлен на оценку T(s,a,s') и Reward(s,a,s') с использованием моделирования Монте-Карло с: 
 
 <br>
 
 
-**83. [# times (s,a,s′) occurs, and]**
+**83. [# times (s,a,s') occurs, and]**
 
-&#10230; [# раз (s,a,s′) происходит, и]
+&#10230; [# раз (s,a,s') происходит, и]
 
 <br>
 
@@ -625,9 +649,9 @@
 <br>
 
 
-**90. Equivalent formulation - By introducing the constant η=11+(#updates to (s,a)) and for each (s,a,u) of the training set, the update rule of model-free Monte Carlo has a convex combination formulation:**
+**90. Equivalent formulation ― By introducing the constant η=11+(\#updatesto(s,a)) and for each (s,a,u) of the training set, the update rule of model-free Monte Carlo has a convex combination formulation:**
 
-&#10230; Эквивалентная формулировка ― Путем введения константы η=11+(#updates to (s,a)) и для каждого (s,a,u) обучающего набора, правило обновления безмодельного Монте-Карло имеет формулировку выпуклой комбинации:
+&#10230; Эквивалентная формулировка ― Путем введения константы η=11+(\#updatesto(s,a)) и для каждого (s,a,u) обучающего набора, правило обновления безмодельного Монте-Карло имеет формулировку выпуклой комбинации:
 
 <br>
 
@@ -639,9 +663,9 @@
 <br>
 
 
-**92. SARSA ― State-action-reward-state-action (SARSA) is a boostrapping method estimating Qπ by using both raw data and estimates as part of the update rule. For each (s,a,r,s′,a′), we have:**
+**92. SARSA ― State-action-reward-state-action (SARSA) is a boostrapping method estimating Qπ by using both raw data and estimates as part of the update rule. For each (s,a,r,s',a'), we have:**
 
-&#10230; State-action-reward-state-action (SARSA) ― Состояние-действие-награда-состояние-действие - это оценка Qπ метода начальной загрузки с использованием как необработанных данных, так и оценок как части правила обновления. Для каждого (s,a,r,s′,a′), у нас есть:
+&#10230; State-action-reward-state-action (SARSA) ― Состояние-действие-награда-состояние-действие - это оценка Qπ метода начальной загрузки с использованием как необработанных данных, так и оценок как части правила обновления. Для каждого (s,a,r,s',a'), у нас есть:
 
 <br>
 
@@ -653,9 +677,9 @@
 <br>
 
 
-**94. Q-learning ― Q-learning is an off-policy algorithm that produces an estimate for Qopt. On each (s,a,r,s′,a′), we have:**
+**94. Q-learning ― Q-learning is an off-policy algorithm that produces an estimate for Qopt. On each (s,a,r,s',a'), we have:**
 
-&#10230; Q-обучение ― Q-обучение - это алгоритм вне политики, который производит оценку Qopt. На каждой (s,a,r,s′,a′), у нас есть:
+&#10230; Q-обучение ― Q-обучение - это алгоритм вне политики, который производит оценку Qopt. На каждой (s,a,r,s',a'), у нас есть:
 
 <br>
 
@@ -695,9 +719,15 @@
 <br>
 
 
-**100. [Two-player zero-sum game ― It is a game where each state is fully observed and such that players take turns. It is defined with:, a starting state sstart, possible actions Actions(s) from state s, successors Succ(s,a) from states s with actions a, whether an end state was reached IsEnd(s), the agent's utility Utility(s) at end state s, the player Player(s) who controls state s]**
+**100. [Two-player zero-sum game ― It is a game where each state is fully observed and such that players take turns. It is defined with:, a starting state sstart, possible actions Actions(s) from state s, whether an end state was reached IsEnd(s), the agent's utility Utility(s) at end state s, the player Player(s) who controls state s]**
 
-&#10230; [Игра для двух игроков с нулевой суммой ― это игра; в которой полностью соблюдается каждое состояние и игроки ходят по очереди. Она определяется с помощью:, начальное состояние sstart, возможные действия Actions(s) из состояния s, преемники Succ(s,a) из состояния s с действиями a, было ли достигнуто конечное состояние IsEnd(s), полезность агента Utility(s) в конечном состоянии s, игрок Player(s) контролирует состояние s]
+&#10230; [Игра для двух игроков с нулевой суммой ― это игра; в которой полностью соблюдается каждое состояние и игроки ходят по очереди. Она определяется с помощью:, начальное состояние sstart, возможные действия Actions(s) из состояния s, было ли достигнуто конечное состояние IsEnd(s), полезность агента Utility(s) в конечном состоянии s, игрок Player(s) контролирует состояние s]
+
+<br>
+
+**1010. successors Succ(s,a) from states s with actions a**
+
+&#10230; преемники Succ(s,a) из состояния s с действиями a
 
 <br>
 
@@ -709,7 +739,7 @@
 <br>
 
 
-**102. [Types of policies ― There are two types of policies:, Deterministic policies, noted πp(s), which are actions that player p takes in state s., Stochastic policies, noted πp(s,a)∈[0,1], which are probabilities that player p takes action a in state s.]**
+**102. [Types of policies ― There are two types of policies:, Deterministic policies, denoted πp(s), which are actions that player p takes in state s., Stochastic policies, denoted πp(s,a)∈[0,1], which are probabilities that player p takes action a in state s.]**
 
 &#10230; [Типы политик ― Есть два типа политик:, Детерминистские политики, обозначаются πp(s), действия игрока p в состоянии s., Стохастические политики, обозначаются πp(s,a)∈[0,1], вероятности совершения игроком p действия a в состоянии s.]
 
@@ -786,7 +816,7 @@
 <br>
 
 
-**113. Evaluation function ― An evaluation function is a domain-specific and approximate estimate of the value Vminimax(s). It is noted Eval(s).**
+**113. Evaluation function ― An evaluation function is a domain-specific and approximate estimate of the value Vminimax(s). It is denoted Eval(s).**
 
 &#10230; Функция оценки ― Функция оценки - это зависящая от предметной области и приблизительная оценка значения Vminimax(s). Обозначается Eval(s).
 
@@ -807,9 +837,9 @@
 <br>
 
 
-**116. TD learning ― Temporal difference (TD) learning is used when we don't know the transitions/rewards. The value is based on exploration policy. To be able to use it, we need to know rules of the game Succ(s,a). For each (s,a,r,s′), the update is done as follows:**
+**116. TD learning ― Temporal difference (TD) learning is used when we don't know the transitions/rewards. The value is based on exploration policy. To be able to use it, we need to know rules of the game Succ(s,a). For each (s,a,r,s'), the update is done as follows:**
 
-&#10230; Обучение временной разнице ― Обучение Temporal difference (TD) используется, когда мы не знаем переходов/наград. Значение основано на политике разведки. Чтобы использовать его, нам необходимо знать правила игры Succ(s,a). Для каждого (s,a,r,s′) обновление выполняется следующим образом:
+&#10230; Обучение временной разнице ― Обучение Temporal difference (TD) используется, когда мы не знаем переходов/наград. Значение основано на политике разведки. Чтобы использовать его, нам необходимо знать правила игры Succ(s,a). Для каждого (s,a,r,s') обновление выполняется следующим образом:
 
 <br>
 
@@ -870,9 +900,9 @@
 <br>
 
 
-**125. Nash equilibrium ― A Nash equilibrium is (π∗A,π∗B) such that no player has an incentive to change its strategy. We have:**
+**125. Nash equilibrium ― A Nash equilibrium is (πA^*,πB^*) such that no player has an incentive to change its strategy. We have:**
 
-&#10230; Nash equilibrium ― Равновесие по Нэшу - это (π∗A,π∗B) такое, что ни у одного игрока нет стимула изменить свою стратегию, у нас есть:
+&#10230; Nash equilibrium ― Равновесие по Нэшу - это (πA^*,πB^*) такое, что ни у одного игрока нет стимула изменить свою стратегию, у нас есть:
 
 <br>
 
@@ -912,9 +942,9 @@
 <br>
 
 
-**131. [A star search, Heuristic function, Algorithm, Consistency, correctness, Admissibility, efficiency]**
+**131. [A star search, Heuristic function, Algorithm, Consistency\, correctness, Admissibility\, efficiency]**
 
-&#10230; [A со звездой поиск, Эвристическая функция, Алгоритм, Консистентность, Корректность, Допустимость, Эффективность]
+&#10230; [A со звездой поиск, Эвристическая функция, Алгоритм, Консистентность\, Корректность, Допустимость\, Эффективность]
 
 <br>
 

@@ -79,9 +79,9 @@
 <br>
 
 
-**12. For each timestep t, the activation a<t> and the output y<t> are expressed as follows:**
+**12. For each timestep t, the activation a^<t> and the output y^<t> are expressed as follows:**
 
-&#10230; Для каждого временного шага t активация a<t> и выход y<t> выражаются следующим образом:
+&#10230; Для каждого временного шага t активация a^<t> и выход y^<t> выражаются следующим образом:
 
 <br>
 
@@ -408,9 +408,15 @@
 <br>
 
 
-**58. where f is a weighting function such that Xi,j=0⟹f(Xi,j)=0. Given the symmetry that e and θ play in this model, the final word embedding e(final)w is given by:**
+**58. where f is a weighting function such that Xi,j=0⟹f(Xi,j)=0.**
 
-&#10230; где f - такая весовая функция, что Xi,j=0⟹f(Xi,j)=0. Учитывая симметрию, которую играют e и θ в этой модели, последнее представление слов e(final)w дается выражением:
+&#10230; где f - такая весовая функция, что Xi,j=0⟹f(Xi,j)=0.
+
+<br>
+
+**580. Given the symmetry that e and θ play in this model, the final word embedding ew^(final) is given by:**
+
+&#10230; Учитывая симметрию, которую играют e и θ в этой модели, последнее представление слов ew^(final) дается выражением:
 
 <br>
 
@@ -443,9 +449,9 @@
 <br>
 
 
-**63. t-SNE ― t-SNE (t-distributed Stochastic Neighbor Embedding) is a technique aimed at reducing high-dimensional embeddings into a lower dimensional space. In practice, it is commonly used to visualize word vectors in the 2D space.**
+**63. $t$-SNE ― $t$-SNE ($t$-distributed Stochastic Neighbor Embedding) is a technique aimed at reducing high-dimensional embeddings into a lower dimensional space. In practice, it is commonly used to visualize word vectors in the 2D space.**
 
-&#10230; t-SNE ― t-распределенное стохастическое соседнее представление (t-distributed Stochastic Neighbor Embedding, t-SNE) - это метод, направленный на сокращение представлений большой размерности в пространство меньшей размерности. На практике он обычно используется для визуализации векторов слов в 2D-пространстве.
+&#10230; $t$-SNE ― $t$-распределенное стохастическое соседнее представление ($t$-distributed Stochastic Neighbor Embedding, $t$-SNE) - это метод, направленный на сокращение представлений большой размерности в пространство меньшей размерности. На практике он обычно используется для визуализации векторов слов в 2D-пространстве.
 
 <br>
 
@@ -499,9 +505,15 @@
 <br>
 
 
-**71. Overview ― A machine translation model is similar to a language model except it has an encoder network placed before. For this reason, it is sometimes referred as a conditional language model. The goal is to find a sentence y such that:**
+**71. Overview ― A machine translation model is similar to a language model except it has an encoder network placed before. For this reason, it is sometimes referred as a conditional language model.**
 
-&#10230; Обзор ― модель машинного перевода похожа на языковую модель, за исключением того, что в ней размещена сеть кодировщика. По этой причине её иногда называют моделью условного языка. Цель состоит в том, чтобы найти такое предложение y, что:
+&#10230; Обзор ― модель машинного перевода похожа на языковую модель, за исключением того, что в ней размещена сеть кодировщика. По этой причине её иногда называют моделью условного языка.
+
+<br>
+
+**710. The goal is to find a sentence $y$ such that:**
+
+&#10230; Цель состоит в том, чтобы найти такое предложение $y$, что:
 
 <br>
 
@@ -548,9 +560,9 @@
 <br>
 
 
-**78. Error analysis ― When obtaining a predicted translation ˆy that is bad, one can wonder why we did not get a good translation y∗ by performing the following error analysis:**
+**78. Error analysis ― When obtaining a predicted translation $\widehat{y}$ that is bad, one can wonder why we did not get a good translation $y^*$ by performing the following error analysis:**
 
-&#10230; Анализ ошибок ― При получении предсказанного перевода ˆy, который является плохим, можно задаться вопросом, почему мы не получили хороший перевод y∗ , выполнив следующий анализ ошибок:
+&#10230; Анализ ошибок ― При получении предсказанного перевода $\widehat{y}$, который является плохим, можно задаться вопросом, почему мы не получили хороший перевод $y^*$ , выполнив следующий анализ ошибок:
 
 <br>
 
@@ -597,9 +609,9 @@
 <br>
 
 
-**85. Attention model ― This model allows an RNN to pay attention to specific parts of the input that is considered as being important, which improves the performance of the resulting model in practice. By noting α<t,t′> the amount of attention that the output y<t> should pay to the activation a<t′> and c<t> the context at time t, we have:**
+**85. Attention model ― This model allows an RNN to pay attention to specific parts of the input that is considered as being important, which improves the performance of the resulting model in practice. By noting $\alpha^{&lt; t, t'&gt;}$ the amount of attention that the output $y^{&lt; t &gt;}$ should pay to the activation $a^{&lt; t' &gt;}$ and $c^{&lt; t &gt;}$ the context at time $t$, we have:**
 
-&#10230; Модель внимания ― эта модель позволяет RNN обращать внимание на определенные части входных данных, которые считаются важными, что на практике улучшает производительность полученной модели. Обозначим α<t,t′> количество внимания, которое выход y<t> должен уделять активации a<t′> и c<t> контексту в момент времени t, у нас есть:
+&#10230; Модель внимания ― эта модель позволяет RNN обращать внимание на определенные части входных данных, которые считаются важными, что на практике улучшает производительность полученной модели. Обозначим $\alpha^{&lt; t, t'&gt;}$ количество внимания, которое выход $y^{&lt; t &gt;}$ должен уделять активации $a^{&lt; t' &gt;}$ и $c^{&lt; t &gt;}$ контексту в момент времени $t$, у нас есть:
 
 <br>
 
@@ -625,9 +637,9 @@
 <br>
 
 
-**89. Attention weight ― The amount of attention that the output y<t> should pay to the activation a<t′> is given by α<t,t′> computed as follows:**
+**89. Attention weight ― The amount of attention that the output $y^{&lt; t &gt;}$ should pay to the activation $a^{&lt; t' &gt;}$ is given by $\alpha^{&lt; t,t' &gt;}$ computed as follows:**
 
-&#10230; Вес внимания ― количество внимания, которое выход y<t> должен уделять активации a<t′>, задается выражением α<t,t′>, вычисляемым следующим образом:
+&#10230; Вес внимания ― количество внимания, которое выход $y^{&lt; t &gt;}$ должен уделять активации $a^{&lt; t' &gt;}$, задается выражением $\alpha^{&lt; t,t' &gt;}$, вычисляемым следующим образом:
 
 <br>
 

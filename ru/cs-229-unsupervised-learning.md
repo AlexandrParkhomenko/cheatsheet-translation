@@ -62,15 +62,15 @@
 
 <br>
 
-**11. E-step: Evaluate the posterior probability Qi(z(i)) that each data point x(i) came from a particular cluster z(i) as follows:**
+**11. E-step: Evaluate the posterior probability $Q_{i}(z^{(i)})$ that each data point $x^{(i)}$ came from a particular cluster $z^{(i)}$ as follows:**
 
-&#10230; E-шаг: Оценить апостериорную вероятность Qi(z(i)) того, что каждая точка данных x(i) пришла из определенного кластера z(i) следующим образом:
+&#10230; E-шаг: Оценить апостериорную вероятность $Q_{i}(z^{(i)})$ того, что каждая точка данных $x^{(i)}$ пришла из определенного кластера $z^{(i)}$ следующим образом:
 
 <br>
 
-**12. M-step: Use the posterior probabilities Qi(z(i)) as cluster specific weights on data points x(i) to separately re-estimate each cluster model as follows:**
+**12. M-step: Use the posterior probabilities $Q_i(z^{(i)})$ as cluster specific weights on data points $x^{(i)}$ to separately re-estimate each cluster model as follows:**
 
-&#10230; M-шаг: Использовать апостериорные вероятности Qi(z(i)) в качестве весовых коэффициентов для конкретных кластеров точек данных x(i), чтобы отдельно переоценить каждую модель кластера следующим образом:
+&#10230; M-шаг: Использовать апостериорные вероятности $Q_i(z^{(i)})$ в качестве весовых коэффициентов для конкретных кластеров точек данных $x^{(i)}$, чтобы отдельно переоценить каждую модель кластера следующим образом:
 
 <br>
 
@@ -80,9 +80,9 @@
 
 <br>
 
-**14. k-means clustering**
+**14. $k$-means clustering**
 
-&#10230; Метод k-средних
+&#10230; Метод $k$-средних
 
 <br>
 
@@ -152,9 +152,9 @@
 
 <br>
 
-**26. Silhouette coefficient ― By noting a and b the mean distance between a sample and all other points in the same class, and between a sample and all other points in the next nearest cluster, the silhouette coefficient s for a single sample is defined as follows:**
+**26. Silhouette coefficient ― By noting $a$ and $b$ the mean distance between a sample and all other points in the same class, and between a sample and all other points in the next nearest cluster, the silhouette coefficient $s$ for a single sample is defined as follows:**
 
-&#10230; Коэффициент силуэта ― Обозначим a и b среднее расстояние между образцом и всеми другими точками в том же классе, а также между образцом и всеми другими точками в следующем ближайшем кластере, коэффициент силуэта s для одного образца определяется следующим образом:
+&#10230; Коэффициент силуэта ― Обозначим $a$ и $b$ среднее расстояние между образцом и всеми другими точками в том же классе, а также между образцом и всеми другими точками в следующем ближайшем кластере, коэффициент силуэта $s$ для одного образца определяется следующим образом:
 
 <br>
 
@@ -226,7 +226,7 @@
 
 **38. Step 2: Compute Σ=1mm∑i=1x(i)x(i)T∈Rn×n, which is symmetric with real eigenvalues.**
 
-&#10230; Шаг 2: Вычислить Σ=1mm∑i=1x(i)x(i)T∈Rn×n, которое является симметричным с действительными собственными значениями.
+&#10230; Шаг 2: Вычислить Σ=1mm∑i=1x(i)x(i)T∈Rn×n, она симметричная с действительными собственными значениями.
 
 <br>
 
@@ -323,6 +323,12 @@
 **54. Reviewed by X, Y and Z**
 
 &#10230; Проверено X, Y и Z
+
+<br>
+
+**540. View PDF version on GitHub**
+
+&#10230; Посмотреть PDF-версию на GitHub
 
 <br>
 

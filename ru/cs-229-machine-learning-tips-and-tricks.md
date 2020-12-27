@@ -110,9 +110,9 @@
 
 <br>
 
-**19. Coefficient of determination ― The coefficient of determination, often noted R2 or r2, provides a measure of how well the observed outcomes are replicated by the model and is defined as follows:**
+**19. Coefficient of determination ― The coefficient of determination, often noted $R^2$ or $r^2$, provides a measure of how well the observed outcomes are replicated by the model and is defined as follows:**
 
-&#10230; Коэффициент детерминации ― Коэффициент детерминации, часто обозначаемый как R2 или r2, обеспечивает меру того, насколько хорошо наблюдаемые результаты воспроизводятся моделью, и определяется следующим образом:
+&#10230; Коэффициент детерминации ― Коэффициент детерминации, часто обозначаемый как $R^2$ или $r^2$, обеспечивает меру того, насколько хорошо наблюдаемые результаты воспроизводятся моделью, и определяется следующим образом:
 
 <br>
 
@@ -122,9 +122,9 @@
 
 <br>
 
-**21. where L is the likelihood and ˆσ2 is an estimate of the variance associated with each response.**
+**21. where $L$ is the likelihood and $\widehat{\sigma}^2$ is an estimate of the variance associated with each response.**
 
-&#10230; где L - правдоподобие, а ˆσ2 - оценка дисперсии, связанной с каждым ответом.
+&#10230; где $L$ - правдоподобие, а $\widehat{\sigma}^2$ - оценка дисперсии, связанной с каждым ответом.
 
 <br>
 
@@ -176,21 +176,21 @@
 
 <br>
 
-**30. [Training on k−1 folds and assessment on the remaining one, Training on n−p observations and assessment on the p remaining ones]**
+**30. [Training on $k-1$ folds and assessment on the remaining one, Training on $n-p$ observations and assessment on the $p$ remaining ones]**
 
-&#10230; [Тренировка на k−1 частях и оценка на оставшейся, Обучение на n−p наблюдениях и оценка на p оставшихся]
-
-<br>
-
-**31. [Generally k=5 or 10, Case p=1 is called leave-one-out]**
-
-&#10230; [Обычно k=5 или 10, Случай p=1 называется исключение-разовое (leave-one-out)]
+&#10230; [Тренировка на $k−1$ частях и оценка на оставшейся, Обучение на $n−p$ наблюдениях и оценка на $p$ оставшихся]
 
 <br>
 
-**32. The most commonly used method is called k-fold cross-validation and splits the training data into k folds to validate the model on one fold while training the model on the k−1 other folds, all of this k times. The error is then averaged over the k folds and is named cross-validation error.**
+**31. [Generally $k=5$ or $10$, Case $p=1$ is called leave-one-out]**
 
-&#10230; Наиболее часто используемый метод называется k-кратной перекрестной проверкой и разбивает обучающие данные на k частей, чтобы проверить модель на одной выборке, одновременно обучая модель на k−1 других выборках, все это k раз. Затем ошибка усредняется по k результатам и называется ошибкой перекрестной проверки.
+&#10230; [Обычно $k=5$ или $10$, Случай $p=1$ называется исключение-разовое (leave-one-out)]
+
+<br>
+
+**32. The most commonly used method is called $k$-fold cross-validation and splits the training data into $k$ folds to validate the model on one fold while training the model on the $k-1$ other folds, all of this $k$ times. The error is then averaged over the $k$ folds and is named cross-validation error.**
+
+&#10230; Наиболее часто используемый метод называется $k$-кратной перекрестной проверкой и разбивает обучающие данные на $k$ частей, чтобы проверить модель на одной выборке, одновременно обучая модель на $k-1$ других выборках, все это $k$ раз. Затем ошибка усредняется по $k$ результатам и называется ошибкой перекрестной проверки.
 
 <br>
 
@@ -230,7 +230,7 @@
 
 <br>
 
-**39. [Symptoms, Regression illustration, classification illustration, deep learning illustration, possible remedies]**
+**39. [Symptoms, Regression illustration, Classification illustration, Deep learning illustration, Possible remedies]**
 
 &#10230; [Симптомы, Иллюстрация регрессии, Иллюстрация классификации, Иллюстрация глубокого обучения, Возможные исправления]
 
@@ -266,9 +266,9 @@
 
 <br>
 
-**45. [Classification metrics, confusion matrix, accuracy, precision, recall, F1 score, ROC]**
+**45. [Classification metrics, Confusion matrix, Accuracy, Precision, Recall, F1 score, ROC]**
 
-&#10230; [Метрики классификации, Матрица ошибок, доля правильных ответов (accuracy), точность (precision), полнота (recall), F1 мера, ROC]
+&#10230; [Метрики классификации, Матрица ошибок, Доля правильных ответов (accuracy), Точность (precision), Полнота (recall), F1 мера, ROC]
 
 <br>
 
@@ -278,15 +278,15 @@
 
 <br>
 
-**47. [Model selection, cross-validation, regularization]**
+**47. [Model selection, Cross-validation, Regularization]**
 
-&#10230; [Выбор модели, перекрестная проверка, регуляризация]
+&#10230; [Выбор модели, Перекрестная проверка, Регуляризация]
 
 <br>
 
-**48. [Diagnostics, Bias/variance tradeoff, error/ablative analysis]**
+**48. [Diagnostics, Bias/variance tradeoff, Error/ablative analysis]**
 
-&#10230; [Диагностика, Компромисс смещения/дисперсии, ошибка/абляционный анализ]
+&#10230; [Диагностика, Компромисс смещения/дисперсии, Ошибок/абляционный анализ]
 
 <br>
 
@@ -317,5 +317,11 @@
 **53. By X and Y**
 
 &#10230; По X и Y
+
+<br>
+
+**53. [Underfitting, Just right, Overfitting]**
+
+&#10230; [Недообучение, Правильно, Переобучение]
 
 <br>

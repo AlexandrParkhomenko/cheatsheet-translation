@@ -100,9 +100,9 @@
 <br>
 
 
-**15. Backtracking search ― Backtracking search is an algorithm used to find maximum weight assignments of a factor graph. At each step, it chooses an unassigned variable and explores its values by recursion. Dynamic ordering (i.e. choice of variables and values) and lookahead (i.e. early elimination of inconsistent options) can be used to explore the graph more efficiently, although the worst-case runtime stays exponential: O(|Domain|n).**
+**15. Backtracking search ― Backtracking search is an algorithm used to find maximum weight assignments of a factor graph. At each step, it chooses an unassigned variable and explores its values by recursion. Dynamic ordering (<i>i.e.</i> choice of variables and values) and lookahead (<i>i.e.</i> early elimination of inconsistent options) can be used to explore the graph more efficiently, although the worst-case runtime stays exponential: O(|Domain|^n).**
 
-&#10230; Поиск с возвратом ― Backtracking search - это алгоритм, используемый для нахождения максимального веса факторного графа. На каждом этапе он выбирает неназначенную переменную и исследует её значения с помощью рекурсии. Динамическое упорядочение (то есть выбор переменных и значений) и опережение (то есть раннее устранение несовместимых вариантов) могут использоваться для более эффективного изучения графика, хотя время выполнения в худшем случае остается экспоненциальным: O(|Domain|n).
+&#10230; Поиск с возвратом ― Backtracking search - это алгоритм, используемый для нахождения максимального веса факторного графа. На каждом этапе он выбирает неназначенную переменную и исследует её значения с помощью рекурсии. Динамическое упорядочение (<i>то есть</i> выбор переменных и значений) и опережение (<i>то есть</i> раннее устранение несовместимых вариантов) могут использоваться для более эффективного изучения графика, хотя время выполнения в худшем случае остается экспоненциальным: O(|Domain|n).
 
 <br>
 
@@ -268,9 +268,27 @@
 <br>
 
 
-**39. [Elimination ― Elimination is a factor graph transformation that removes Xi from the graph and solves a small subproblem conditioned on its Markov blanket as follows:, Consider all factors fi,1,...,fi,k that depend on Xi, Remove Xi and fi,1,...,fi,k, Add fnew,i(x) defined as:]**
+**39. Elimination ― Elimination is a factor graph transformation that removes Xi from the graph and solves a small subproblem conditioned on its Markov blanket as follows:**
 
-&#10230; [Устранение ― Исключение - это преобразование факторного графа с удалением Xi из графа и решением небольшой подзадачи с условием марковского ограждения:, Рассмотреть все факторы fi,1,...,fi,k с зависимостью от Xi, Удалить Xi и fi,1,...,fi,k, Добавить fnew,i(x) по определению:]
+&#10230; [Устранение ― Исключение - это преобразование факторного графа с удалением Xi из графа и решением небольшой подзадачи с условием марковского ограждения:
+
+<br>
+
+**390. Consider all factors fi,1,...,fi,k that depend on Xi**
+
+&#10230; Рассмотреть все факторы fi,1,...,fi,k с зависимостью от Xi
+
+<br>
+
+**391. Remove Xi and fi,1,...,fi,k**
+
+&#10230; Удалить Xi и fi,1,...,fi,k
+
+<br>
+
+**392. Add fnew,i(x) defined as:**
+
+&#10230; Добавить fnew,i(x) по определению:
 
 <br>
 
@@ -347,7 +365,7 @@
 
 **50. Locally normalized ― For each xParents(i), all factors are local conditional distributions. Hence they have to satisfy:**
 
-&#10230; Локально нормализованные - для каждого xParents(i) все факторы являются локальными условными распределениями. Следовательно, они должны удовлетворить:
+&#10230; Локально нормализованные ― для каждого xParents(i) все факторы являются локальными условными распределениями. Следовательно, они должны удовлетворить:
 
 <br>
 
@@ -417,7 +435,7 @@
 
 **60. [Generate, distribution]**
 
-&#10230; [Создает, распределение]
+&#10230; [Создаёт, распределение]
 
 <br>
 
@@ -438,14 +456,14 @@
 
 **63. [General probabilistic inference strategy ― The strategy to compute the probability P(Q|E=e) of query Q given evidence E=e is as follows:, Step 1: Remove variables that are not ancestors of the query Q or the evidence E by marginalization, Step 2: Convert Bayesian network to factor graph, Step 3: Condition on the evidence E=e, Step 4: Remove nodes disconnected from the query Q by marginalization, Step 5: Run a probabilistic inference algorithm (manual, variable elimination, Gibbs sampling, particle filtering)]**
 
-&#10230; [Общая стратегия вероятностного вывода ― Стратегия вычисления вероятности P(Q|E=e) запроса Q при наличии свидетельства (англ: evidence) E=e следующая:, Шаг 1. Удалить неявляющиеся предками запроса Q или свидетельства E переменные путем маргинализации, Шаг 2: Преобразовать байесовскую сеть в факторный граф, Шаг 3: Улучшить состояние свидетельства E=e, Шаг 4: Удалить отключенные от запроса Q узлы путем маргинализации, Шаг 5: Запустить вероятностный алгоритм вывода (вручную, исключение переменных, выборка по Гиббсу, фильтрация частиц)]
+&#10230; [Общая стратегия вероятностного вывода ― Стратегия вычисления вероятности P(Q|E=e) запроса Q при наличии свидетельства (англ: evidence) E=e следующая:, Шаг 1: Удалить неявляющиеся предками запроса Q или свидетельства E переменные путем маргинализации, Шаг 2: Преобразовать байесовскую сеть в факторный граф, Шаг 3: Улучшить состояние свидетельства E=e, Шаг 4: Удалить отключенные от запроса Q узлы путем маргинализации, Шаг 5: Запустить вероятностный алгоритм вывода (вручную, исключение переменных, выборка по Гиббсу, фильтрация частиц)]
 
 <br>
 
 
 **64. Forward-backward algorithm ― This algorithm computes the exact value of P(H=hk|E=e) (smoothing query) for any k∈{1,...,L} in the case of an HMM of size L. To do so, we proceed in 3 steps:**
 
-&#10230; Алгоритм прямого-обратного хода - этот алгоритм вычисляет точное значение P(H=hk|E=e) (запрос сглаживания) для любого k∈{1,...,L} в случае HMM размера L. Чтобы сделать так, мы выполняем 3 шага:
+&#10230; Алгоритм прямого-обратного хода ― этот алгоритм вычисляет точное значение P(H=hk|E=e) (запрос сглаживания) для любого k∈{1,...,L} в случае HMM размера L. Чтобы сделать так, мы выполняем 3 шага:
 
 <br>
 
@@ -471,9 +489,27 @@
 <br>
 
 
-**68. [Gibbs sampling ― This algorithm is an iterative approximate method that uses a small set of assignments (particles) to represent a large probability distribution. From a random assignment x, Gibbs sampling performs the following steps for i∈{1,...,n} until convergence:, For all u∈Domaini, compute the weight w(u) of assignment x where Xi=u, Sample v from the probability distribution induced by w: v∼P(Xi=v|X−i=x−i), Set Xi=v]**
+**68. Gibbs sampling ― This algorithm is an iterative approximate method that uses a small set of assignments (particles) to represent a large probability distribution. From a random assignment x, Gibbs sampling performs the following steps for i∈{1,...,n} until convergence:**
 
-&#10230; [Выборка по Гиббсу ― Этот алгоритм представляет собой итеративный приближенный метод. Он использует небольшой набор назначений (частиц) для представления большого распределения вероятностей. Из случайного присвоения x, Выборка по Гиббсу выполняет следующие шаги для i∈{1,...,n} до сходимости:, Для всех u∈Domaini, вычислить вес w(u) присвоения x; где Xi=u, Произвести выборку v из индуцированного w распределения вероятностей: v∼P(Xi=v|X−i=x−i), Установить Xi=v]
+&#10230; Выборка по Гиббсу ― Этот алгоритм представляет собой итеративный приближенный метод. Он использует небольшой набор назначений (частиц) для представления большого распределения вероятностей. Из случайного присвоения x, Выборка по Гиббсу выполняет следующие шаги для i∈{1,...,n} до сходимости:
+
+<br>
+
+**680. For all u∈Domaini, compute the weight w(u) of assignment x where Xi=u**
+
+&#10230; Для всех u∈Domaini, вычислить вес w(u) присвоения x, где Xi=u
+
+<br>
+
+**681. Sample v from the probability distribution induced by w: v∼P(Xi=v|X−i=x−i)**
+
+&#10230; Произвести выборку v из индуцированного w распределения вероятностей: v∼P(Xi=v|X−i=x−i)
+
+<br>
+
+**682. Set Xi=v**
+
+&#10230; Установить Xi=v
 
 <br>
 
@@ -485,9 +521,9 @@
 <br>
 
 
-**70. [Particle filtering ― This algorithm approximates the posterior density of state variables given the evidence of observation variables by keeping track of K particles at a time. Starting from a set of particles C of size K, we run the following 3 steps iteratively:, Step 1: proposal - For each old particle xt−1∈C, sample x from the transition probability distribution p(x|xt−1) and add x to a set C′., Step 2: weighting - Weigh each x of the set C′ by w(x)=p(et|x), where et is the evidence observed at time t., Step 3: resampling - Sample K elements from the set C′ using the probability distribution induced by w and store them in C: these are the current particles xt.]**
+**70. [Particle filtering ― This algorithm approximates the posterior density of state variables given the evidence of observation variables by keeping track of K particles at a time. Starting from a set of particles C of size K, we run the following 3 steps iteratively:, Step 1: proposal - For each old particle xt−1∈C, sample x from the transition probability distribution p(x|xt−1) and add x to a set C'., Step 2: weighting - Weigh each x of the set C' by w(x)=p(et|x), where et is the evidence observed at time t., Step 3: resampling - Sample K elements from the set C' using the probability distribution induced by w and store them in C: these are the current particles xt.]**
 
-&#10230; [Фильтрация частиц ― Этот алгоритм аппроксимирует апостериорную плотность переменных состояния с учетом данных наблюдений путем отслеживания K частиц за раз. Начиная с набора частиц C размера K, мы итеративно выполняем следующие 3 шага:, Шаг 1: предложение - Для каждой старой частицы xt−1∈C, выбрать x из распределения вероятности перехода p(x|xt−1) и добавить x к множеству C′., Шаг 2: взвешивание - Взвесить каждый x из множества C′ как w(x)=p(et|x), где et - свидетельство в момент времени t., Шаг 3: повторная выборка - выборка K элементов из множества C′ с использованием индуцированного w распределения вероятностей и сохранение их в C: это текущие частицы xt.]
+&#10230; [Фильтрация частиц ― Этот алгоритм аппроксимирует апостериорную плотность переменных состояния с учетом данных наблюдений путем отслеживания K частиц за раз. Начиная с набора частиц C размера K, мы итеративно выполняем следующие 3 шага:, Шаг 1: предложение - Для каждой старой частицы xt−1∈C, выбрать x из распределения вероятности перехода p(x|xt−1) и добавить x к множеству C'., Шаг 2: взвешивание - Взвесить каждый x из множества C' как w(x)=p(et|x), где et - свидетельство в момент времени t., Шаг 3: повторная выборка - выборка K элементов из множества C' с использованием индуцированного w распределения вероятностей и сохранение их в C: это текущие частицы xt.]
 
 <br>
 

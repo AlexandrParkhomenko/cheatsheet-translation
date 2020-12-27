@@ -104,9 +104,15 @@
 
 <br>
 
-**18. Likelihood ― The likelihood of a model L(θ) given parameters θ is used to find the optimal parameters θ through maximizing the likelihood. In practice, we use the log-likelihood ℓ(θ)=log(L(θ)) which is easier to optimize. We have:**
+**18. Likelihood ― The likelihood of a model L(θ) given parameters θ is used to find the optimal parameters θ through maximizing the likelihood.**
 
-&#10230; Правдоподобие модели ― Likelihood L(θ) при заданных параметрах θ используются для нахождения оптимальных параметров θ посредством максимизации правдоподобия. На практике мы используем логарифмическую вероятность ℓ(θ)=log(L(θ)), которую легче оптимизировать. У нас есть:
+&#10230; Правдоподобие модели ― Likelihood L(θ) при заданных параметрах θ используются для нахождения оптимальных параметров θ посредством максимизации правдоподобия.
+
+<br>
+
+**180.  Remark: In practice, we use the log-likelihood ℓ(θ)=log(L(θ)) which is easier to optimize. We have:**
+
+&#10230; Примечание: На практике мы используем логарифмическую вероятность ℓ(θ)=log(L(θ)), которую легче оптимизировать. У нас есть:
 
 <br>
 
@@ -140,9 +146,9 @@
 
 <br>
 
-**24. Normal equations ― By noting X the matrix design, the value of θ that minimizes the cost function is a closed-form solution such that:**
+**24. Normal equations ― By noting $X$ the design matrix, the value of $\theta$ that minimizes the cost function is a closed-form solution such that:**
 
-&#10230; Нормальные уравнения ― Обозначим X как матрицу данных (объекты-признаки), значение θ, которое минимизирует функцию стоимости, является решением в аналитическом виде, так что:
+&#10230; Нормальные уравнения ― Обозначим $X$ как матрицу данных (объекты-признаки), значение $\theta$, которое минимизирует функцию стоимости, является решением в аналитическом виде, так что:
 
 <br>
 
@@ -178,7 +184,7 @@
 
 **30. Logistic regression ― We assume here that y|x;θ∼Bernoulli(ϕ). We have the following form:**
 
-&#10230; Логистическая регрессия - мы предполагаем здесь y|x;θ∼Bernoulli(ϕ). Имеем следующий вид:
+&#10230; Логистическая регрессия ― мы предполагаем здесь y|x;θ∼Bernoulli(ϕ). Имеем следующий вид:
 
 <br>
 
@@ -188,9 +194,9 @@
 
 <br>
 
-**32. Softmax regression ― A softmax regression, also called a multiclass logistic regression, is used to generalize logistic regression when there are more than 2 outcome classes. By convention, we set θK=0, which makes the Bernoulli parameter ϕi of each class i equal to:**
+**32. Softmax regression ― A softmax regression, also called a multiclass logistic regression, is used to generalize logistic regression when there are more than 2 outcome classes. By convention, we set $\theta_K=0$, which makes the Bernoulli parameter $\phi_i$ of each class $i$ be such that:**
 
-&#10230; Регрессия Softmax ― Регрессия softmax, также называемая многоклассовой логистической регрессией, используется для обобщения логистической регрессии, когда существует более двух классов результатов. По соглашению мы полагаем θK=0, что делает параметр Бернулли ϕi каждого класса i равным:
+&#10230; Регрессия Softmax ― Регрессия softmax, также называемая многоклассовой логистической регрессией, используется для обобщения логистической регрессии, когда существует более двух классов результатов. По соглашению мы полагаем $\theta_K=0$, что делает параметр Бернулли $\phi_i$ каждого класса $i$ равным:
 
 <br>
 
@@ -212,7 +218,7 @@
 
 <br>
 
-**36. Here are the most common exponential distributions summed up in the following table:**
+**36. The most common exponential distributions are summed up in the following table:**
 
 &#10230; Наиболее распространенные экспоненциальные распределения приведенны в следующей таблице:
 
@@ -224,9 +230,9 @@
 
 <br>
 
-**38. Assumptions of GLMs ― Generalized Linear Models (GLM) aim at predicting a random variable y as a function fo x∈Rn+1 and rely on the following 3 assumptions:**
+**38. Assumptions of GLMs ― Generalized Linear Models (GLM) aim at predicting a random variable $y$ as a function of $x\in\mathbb{R}^{n+1}$ and rely on the following 3 assumptions:**
 
-&#10230; Предположения GLM ― Обобщенные линейные модели (GLM) нацелены на предсказание случайной величины y как функции от x∈Rn+1 и основываются на следующих трех предположениях:
+&#10230; Предположения GLM ― Обобщенные линейные модели (GLM) нацелены на предсказание случайной величины $y$ как функции от $x\in\mathbb{R}^{n+1}$ и основываются на следующих трех предположениях:
 
 <br>
 
@@ -278,15 +284,21 @@
 
 <br>
 
+**460. Remark: the decision boundary is defined as**
+
+&#10230; Примечание: граница решения определяется как
+
+<br>
+
 **47. Hinge loss ― The hinge loss is used in the setting of SVMs and is defined as follows:**
 
 &#10230; Hinge loss ― Потери на шарнирах используются при настройке SVM и определяются следующим образом:
 
 <br>
 
-**48. Kernel ― Given a feature mapping ϕ, we define the kernel K to be defined as:**
+**48. Kernel ― Given a feature mapping $\phi$, we define the kernel $K$ as follows:**
 
-&#10230; Kernel ― Учитывая отображение признаков ϕ, мы определяем ядро K как:
+&#10230; Kernel ― Учитывая отображение признаков $\phi$, мы определяем ядро $K$ как:
 
 <br>
 
@@ -362,9 +374,15 @@
 
 <br>
 
-**61. Solutions ― Maximizing the log-likelihood gives the following solutions, with k∈{0,1},l∈[[1,L]]**
+**61. Solutions ― Maximizing the log-likelihood gives the following solutions**
 
-&#10230; Решения ― Максимизация логарифмического правдоподобия дает следующие решения с k∈{0,1},l∈[[1,L]]
+&#10230; Решения ― Максимизация логарифмического правдоподобия дает следующие решения
+
+<br>
+
+**610. with k∈{0,1},l∈[[1,L]]**
+
+&#10230; с k∈{0,1},l∈[[1,L]]
 
 <br>
 
@@ -422,9 +440,21 @@
 
 <br>
 
-**71. Weak learners trained on remaining errors**
+**71. Weak learners are trained on residuals**
 
-&#10230; Слабые ученики обучаются оставшимся ошибкам
+&#10230; Слабые ученики обучаются на разнице
+
+<br>
+
+**710. Known as Adaboost**
+
+&#10230; Известный как Adaboost
+
+<br>
+
+**711. Examples include XGBoost**
+
+&#10230; Примеры включают XGBoost
 
 <br>
 
@@ -440,9 +470,9 @@
 
 <br>
 
-**74. Remark: The higher the parameter k, the higher the bias, and the lower the parameter k, the higher the variance.**
+**74. Remark: the higher the parameter $k$, the higher the bias, and the lower the parameter $k$, the higher the variance.**
 
-&#10230; Примечание: Чем выше параметр k, тем выше смещение, а чем ниже параметр k, тем выше дисперсия.
+&#10230; Примечание: Чем выше параметр $k$, тем выше смещение, а чем ниже параметр $k$, тем выше дисперсия.
 
 <br>
 
@@ -482,7 +512,7 @@
 
 <br>
 
-**81: the training and testing sets follow the same distribution**
+**81. the training and testing sets follow the same distribution**
 
 &#10230; наборы для обучения и тестирования имеют одинаковое распределение
 
@@ -512,9 +542,9 @@
 
 <br>
 
-**86. Remark: the VC dimension of H={set of linear classifiers in 2 dimensions} is 3.**
+**86. Remark: the VC dimension of ${\small\mathcal{H}=\{\textrm{set of linear classifiers in 2 dimensions}\}}$ is 3.**
 
-&#10230; Примечание: VC размерность H={набор линейных классификаторов в 2-х измерениях} это 3.
+&#10230; Примечание: VC размерность ${\small\mathcal{H}=\{\textrm{набор линейных классификаторов в 2-х измерениях}\}}$ это 3.
 
 <br>
 
@@ -530,15 +560,15 @@
 
 <br>
 
-**89. [Notations and general concepts, loss function, gradient descent, likelihood]**
+**89. [Notations and general concepts, Loss function, Gradient descent, Likelihood]**
 
-&#10230; [Обозначения и общие понятия, функция потерь, градиентный спуск, правдоподобие]
+&#10230; [Обозначения и общие понятия, Функция потерь, Градиентный спуск, Правдоподобие]
 
 <br>
 
-**90. [Linear models, linear regression, logistic regression, generalized linear models]**
+**90. [Linear models, Linear regression, Logistic regression, Logisitic regression, Generalized linear models]**
 
-&#10230; [Линейные модели, линейная регрессия, логистическая регрессия, обобщенные линейные модели]
+&#10230; [Линейные модели, Линейная регрессия, Логистическая регрессия, Логистическая регрессия, Обобщенные линейные модели]
 
 <br>
 

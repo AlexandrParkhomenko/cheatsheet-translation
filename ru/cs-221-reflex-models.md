@@ -22,8 +22,7 @@
 
 <br>
 
-
-**4. Feature vector ― The feature vector of an input x is noted ϕ(x) and is such that:**
+**4. Feature vector ― The feature vector of an input x is denoted ϕ(x) and is such that:**
 
 &#10230; Вектор признаков ― Вектор признаков входного сигнала x обозначается как ϕ(x) и таков, что:
 
@@ -32,7 +31,7 @@
 
 **5. Score ― The score s(x,w) of an example (ϕ(x),y)∈Rd×R associated to a linear model of weights w∈Rd is given by the inner product:**
 
-&#10230; Оценка ― Оценка s(x,w) примера (ϕ(x),y) ∈Rd×R, связанного с линейной моделью весов w∈Rd, дается внутренним произведением:
+&#10230; Оценка ― Оценка s(x,w) примера (ϕ(x),y)∈Rd×R, связанного с линейной моделью весов w∈Rd, дается внутренним произведением:
 
 <br>
 
@@ -81,7 +80,7 @@
 
 **12. Residual ― The residual res(x,y,w)∈R is defined as being the amount by which the prediction fw(x) overshoots the target y:**
 
-&#10230; Разность ― Разность res(x,y,w)∈R определяется как величина, на которую прогноз fw(x) превышает целевой y:
+&#10230; Разность ― Residual res(x,y,w)∈R определяется как величина, на которую прогноз fw(x) превышает целевой y:
 
 <br>
 
@@ -100,7 +99,7 @@
 <br>
 
 
-**15. Classification case - The classification of a sample x of true label y∈{−1,+1} with a linear model of weights w can be done with the predictor fw(x)≜sign(s(x,w)). In this situation, a metric of interest quantifying the quality of the classification is given by the margin m(x,y,w), and can be used with the following loss functions:**
+**15. Classification case ― The classification of a sample x of true label y∈{−1,+1} with a linear model of weights w can be done with the predictor fw(x)≜sign(s(x,w)). In this situation, a metric of interest quantifying the quality of the classification is given by the margin m(x,y,w), and can be used with the following loss functions:**
 
 &#10230; Классификационный случай ― Классификация выборки x истинной метки y∈{−1,+1} с линейной моделью весов w может быть выполнена с помощью предиктора fw(x)≜sign(s(x,w)). В этой ситуации интересующий показатель, определяющий качество классификации, задается отступом m(x,y,w) и может использоваться со следующими функциями потерь:
 
@@ -114,7 +113,7 @@
 <br>
 
 
-**17. Regression case - The prediction of a sample x of true label y∈R with a linear model of weights w can be done with the predictor fw(x)≜s(x,w). In this situation, a metric of interest quantifying the quality of the regression is given by the margin res(x,y,w) and can be used with the following loss functions:**
+**17. Regression case ― The prediction of a sample x of true label y∈R with a linear model of weights w can be done with the predictor fw(x)≜s(x,w). In this situation, a metric of interest quantifying the quality of the regression is given by the margin res(x,y,w) and can be used with the following loss functions:**
 
 &#10230; Случай регрессии ― Предсказание выборки x истинной метки y∈R с помощью линейной модели весов w может быть выполнено с помощью предиктора fw(x)≜s(x,w). В этой ситуации интересующий показатель, количественно оценивающий качество регрессии, задается отступом res(x,y,w) и может использоваться со следующими функциями потерь:
 
@@ -128,7 +127,7 @@
 <br>
 
 
-**19. Loss minimization framework ― In order to train a model, we want to minimize the training loss is defined as follows:**
+**19. Loss minimization framework ― In order to train a model, we want to minimize the training loss defined as follows:**
 
 &#10230; Фреймворк минимизации потерь ― чтобы обучить модель, мы хотим минимизировать потери при обучении, которые определяются следующим образом:
 
@@ -184,9 +183,15 @@
 <br>
 
 
-**27. For a more detailed overview of the concepts above, check out the Supervised Learning cheatsheets!**
+**27. For a more detailed overview of the concepts above, check out the**
 
-&#10230; Для более подробного обзора приведенных выше концепций ознакомьтесь со шпаргалками по контролируемому обучению!
+&#10230; Для более подробного обзора приведенных выше концепций ознакомьтесь с
+
+<br>
+
+**270. Supervised Learning cheatsheets**
+
+&#10230; Шпаргалками по контролируемому обучению
 
 <br>
 
@@ -240,9 +245,9 @@
 <br>
 
 
-**35. Remark: we have σ′(z)=σ(z)(1−σ(z)).**
+**35. Remark: we have σ'(z)=σ(z)(1−σ(z)).**
 
-&#10230; Примечание: у нас есть σ′(z)=σ(z)(1−σ(z)).
+&#10230; Примечание: у нас есть σ'(z)=σ(z)(1−σ(z)).
 
 <br>
 
@@ -254,14 +259,14 @@
 <br>
 
 
-**37. Approximation and estimation error ― The approximation error ϵapprox represents how far the entire hypothesis class F is from the target predictor g∗, while the estimation error ϵest quantifies how good the predictor ^f is with respect to the best predictor f∗ of the hypothesis class F.**
+**37. Approximation and estimation error ― The approximation error ϵapprox represents how far the entire hypothesis class F is from the target predictor g^*, while the estimation error ϵest quantifies how good the predictor ^f is with respect to the best predictor f^* of the hypothesis class F.**
 
-&#10230; Ошибка аппроксимации и оценки ― Ошибка аппроксимации ϵapprox представляет, как далеко весь класс гипотез F от целевого предиктора g∗, в то время как ошибка оценки ϵest количественно определяет, насколько хорош предиктор ^f по отношению к лучшему предиктору f∗ из класса гипотез F.
+&#10230; Ошибка аппроксимации и оценки ― Ошибка аппроксимации ϵapprox представляет, как далеко весь класс гипотез F от целевого предиктора g^*, в то время как ошибка оценки ϵest количественно определяет, насколько хорош предиктор ^f по отношению к лучшему предиктору f^* из класса гипотез F.
 
 <br>
 
 
-**38. Regularization ― The regularization procedure aims at avoiding the model to overfit the data and thus deals with high variance issues. The following table sums up the different types of commonly used regularization techniques:**
+**38. Regularization ― Regularization aims to keep the model from overfitting to the data and thus deals with high variance issues. The following table sums up the different types of commonly used regularization techniques:**
 
 &#10230; Регуляризация ― Процедура регуляризации направлена на то, чтобы модель не переобучалась на данных (запоминала их полностью), и, таким образом, решает проблемы с высокой дисперсией. В следующей таблице суммированы различные типы широко используемых методов регуляризации:
 
@@ -275,7 +280,7 @@
 <br>
 
 
-**40. Hyperparameters ― Hyperparameters are the properties of the learning algorithm, and include features, regularization parameter λ, number of iterations T, step size η, etc.**
+**40. Hyperparameters ― Hyperparameters are the properties of the learning algorithm, and include architecture-related features, the regularization parameter λ, number of iterations T, step size η, etc.**
 
 &#10230; Гиперпараметры ― это свойства алгоритма обучения и включают функции, параметр регуляризации λ, количество итераций T, размер шага η и так далее.
 
@@ -317,9 +322,15 @@
 <br>
 
 
-**46. For a more detailed overview of the concepts above, check out the Machine Learning tips and tricks cheatsheets!**
+**46. For a more detailed overview of the concepts above, check out the**
 
-&#10230; Для более подробного обзора приведенных выше концепций ознакомьтесь со шпаргалками с советами и приемами машинного обучения!
+&#10230; Для более подробного обзора приведенных выше концепций ознакомьтесь с
+
+<br>
+
+**460. Machine Learning tips and tricks cheatsheets**
+
+&#10230; Шпаргалками с советами и приемами машинного обучения
 
 <br>
 
@@ -331,7 +342,7 @@
 <br>
 
 
-**48. The class of unsupervised learning methods aims at discovering the structure of the data, which may have of rich latent structures.**
+**48. The class of unsupervised learning methods aims at discovering the structure of the data, which may have rich latent structures.**
 
 &#10230; Класс методов обучения без учителя направлен на обнаружение структуры данных, которые могут иметь богатые скрытые структуры.
 
@@ -345,9 +356,9 @@
 <br>
 
 
-**50. Clustering ― Given a training set of input points Dtrain, the goal of a clustering algorithm is to assign each point ϕ(xi) to a cluster zi∈{1,...,k}**
+**50. Clustering ― Given a training set of n input points Dtrain, the goal of a clustering algorithm is to assign each point ϕ(xi) to a cluster zi∈{1,...,k}.**
 
-&#10230; Кластеризация ― Дан обучающий набор входных точек Dtrain, цель алгоритма кластеризации состоит в том, чтобы назначить каждую точку ϕ(xi) кластеру zi∈{1,...,k}
+&#10230; Кластеризация ― Дан обучающий набор входных точек Dtrain, цель алгоритма кластеризации состоит в том, чтобы назначить каждую точку ϕ(xi) кластеру zi∈{1,...,k}.
 
 <br>
 
@@ -359,9 +370,9 @@
 <br>
 
 
-**52. Algorithm ― After randomly initializing the cluster centroids μ1,μ2,...,μk∈Rn, the k-means algorithm repeats the following step until convergence:**
+**52. Algorithm ― After randomly initializing the cluster centroids μ1,μ2,...,μk∈R^d, the k-means algorithm repeats the following step until convergence:**
 
-&#10230; Алгоритм ― после случайной инициализации центроидов кластера μ1,μ2,...,μk∈Rn алгоритм k-средних повторяет следующий шаг до сходимости:
+&#10230; Алгоритм ― после случайной инициализации центроидов кластера μ1,μ2,...,μk∈R^d алгоритм k-средних повторяет следующий шаг до сходимости:
 
 <br>
 
@@ -387,16 +398,16 @@
 <br>
 
 
-**56. Eigenvalue, eigenvector ― Given a matrix A∈Rn×n, λ is said to be an eigenvalue of A if there exists a vector z∈Rn∖{0}, called eigenvector, such that we have:**
+**56. Eigenvalue, eigenvector ― Given a matrix A∈R^d×d, λ is said to be an eigenvalue of A if there exists a vector z∈R^d∖{0}, called eigenvector, such that we have:**
 
-&#10230; Собственное значение, собственный вектор ― Для данной матрицы A∈Rn×n, λ называется собственным значением A, если существует вектор z∈Rn∖{0}, называемый собственным вектором, такой, что у нас есть:
+&#10230; Собственное значение, собственный вектор ― Для данной матрицы A∈R^d×d, λ называется собственным значением A, если существует вектор z∈R^d∖{0}, называемый собственным вектором, такой, что у нас есть:
 
 <br>
 
 
-**57. Spectral theorem ― Let A∈Rn×n. If A is symmetric, then A is diagonalizable by a real orthogonal matrix U∈Rn×n. By noting Λ=diag(λ1,...,λn), we have:**
+**57. Spectral theorem ― Let A∈R^d×d. If A is symmetric, then A is diagonalizable by a real orthogonal matrix U∈R^d×d. By noting Λ=diag(λ1,...,λd), we have:**
 
-&#10230; Спектральная теорема ― Пусть A∈Rn×n. Если A симметрична, то A диагонализуема действительной ортогональной матрицей U∈Rn×n. Обозначим Λ=diag(λ1,...,λn), у нас есть:
+&#10230; Спектральная теорема ― Пусть A∈R^d×d. Если A симметрична, то A диагонализуема действительной ортогональной матрицей U∈R^d×d. Обозначим Λ=diag(λ1,...,λd), у нас есть:
 
 <br>
 
@@ -417,7 +428,7 @@
 
 **60. Step 1: Normalize the data to have a mean of 0 and standard deviation of 1.**
 
-&#10230; Шаг 1. Нормализовать данные, чтобы получить среднее значение 0 и стандартное отклонение 1.
+&#10230; Шаг 1: Нормализовать данные, чтобы получить среднее значение 0 и стандартное отклонение 1.
 
 <br>
 
@@ -429,9 +440,9 @@
 <br>
 
 
-**62. [Step 2: Compute Σ=1mm∑i=1ϕ(xi)ϕ(xi)T∈Rn×n, which is symmetric with real eigenvalues., Step 3: Compute u1,...,uk∈Rn the k orthogonal principal eigenvectors of Σ, i.e. the orthogonal eigenvectors of the k largest eigenvalues., Step 4: Project the data on spanR(u1,...,uk).]**
+**62. [Step 2: Compute Σ=1mm∑i=1ϕ(xi)ϕ(xi)T∈Rn×n, which is symmetric with real eigenvalues., Compute u1,...,uk∈R^d the k orthogonal principal eigenvectors of Σ, i.e. the orthogonal eigenvectors of the k largest eigenvalues., Step 4: Project the data on spanR(u1,...,uk).]**
 
-&#10230; [Шаг 2: Вычислить Σ=1mm∑i=1ϕ(xi)ϕ(xi)T∈Rn×n, которая симметрична действительным собственным значениям., Шаг 3: Вычислить u1,...,uk∈Rn k ортогональных главных собственных векторов Σ, т.е. ортогональные собственные векторы k наибольших собственных значений., Шаг 4: Спроецировать данные на spanR(u1,...,uk).]
+&#10230; [Шаг 2: Вычислить Σ=1mm∑i=1ϕ(xi)ϕ(xi)T∈Rn×n, которая симметрична действительным собственным значениям., Шаг 3: Вычислить u1,...,uk∈R^d k ортогональных главных собственных векторов Σ, т.е. ортогональные собственные векторы k наибольших собственных значений., Шаг 4: Спроецировать данные на spanR(u1,...,uk).]
 
 <br>
 
@@ -450,16 +461,22 @@
 <br>
 
 
-**65. For a more detailed overview of the concepts above, check out the Unsupervised Learning cheatsheets!**
+**65. For a more detailed overview of the concepts above, check out the**
 
-&#10230; Более подробный обзор приведенных выше концепций можно найти в шпаргалках по Обучению без учителя!
+&#10230; Для более подробного обзора приведенных выше концепций ознакомьтесь с
+
+<br>
+
+**650. Unsupervised Learning cheatsheets**
+
+&#10230; Шпаргалками по Обучению без учителя
 
 <br>
 
 
-**66. [Linear predictors, Feature vector, Linear classifier/regression, Margin]**
+**66. [Linear predictors, Feature vector, Linear classifier/regression, Margin, Residual]**
 
-&#10230; [Линейные предикторы, Вектор признаков, Линейный классификатор/регрессия, Отступn]
+&#10230; [Линейные предикторы, Вектор признаков, Линейный классификатор/регрессия, Отступ, Разность]
 
 <br>
 

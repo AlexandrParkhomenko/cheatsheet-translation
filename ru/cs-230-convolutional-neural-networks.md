@@ -144,7 +144,7 @@
 
 **21. [Preserves detected features, Most commonly used, Down samples feature map, Used in LeNet]**
 
-&#10230; [Сохраняет обнаруженные функции, Наиболее часто используемые, Карта функций уменьшенных образцов, Используется в LeNet]
+&#10230; [Сохраняет обнаруженные признаки, Наиболее часто используемые, Карта признаков уменьшенных образцов, Используется в LeNet]
 
 <br>
 
@@ -228,7 +228,7 @@
 
 **33. Parameter compatibility in convolution layer ― By noting I the length of the input volume size, F the length of the filter, P the amount of zero padding, S the stride, then the output size O of the feature map along that dimension is given by:**
 
-&#10230; Совместимость параметров в сверточном слое ― Обозначим I длину входного размера объёма, F длину фильтра, P длину дополнения нулями, S шаг, затем выходной размер O карты функций по этому измерению определяется как:
+&#10230; Совместимость параметров в сверточном слое ― Обозначим I длину входного размера объёма, F длину фильтра, P длину дополнения нулями, S шаг, затем выходной размер O карты признаков по этому измерению определяется как:
 
 <br>
 
@@ -401,9 +401,9 @@
 <br>
 
 
-**58. [Box of center (bx,by), height bh and width bw, Reference points (l1x,l1y), ..., (lnx,lny)]**
+**58. [Box of center (bx,by), height bh and width bw, Reference points (l1x,l1y),...,(lnx,lny)]**
 
-&#10230; [Рамка с центром (bx,by), высота bh и ширина bw, Ориентиры (l1x,l1y), ..., (lnx,lny)]
+&#10230; [Рамка с центром (bx,by), высота bh и ширина bw, Ориентиры (l1x,l1y),...,(lnx,lny)]
 
 <br>
 
@@ -541,9 +541,9 @@
 <br>
 
 
-**78. One Shot Learning ― One Shot Learning is a face verification algorithm that uses a limited training set to learn a similarity function that quantifies how different two given images are. The similarity function applied to two images is often noted d(image 1,image 2).**
+**78. One Shot Learning ― One Shot Learning is a face verification algorithm that uses a limited training set to learn a similarity function that quantifies how different two given images are. The similarity function applied to two images is often noted d(image1,image2).**
 
-&#10230; Обучение одним выстрелом ― One Shot Learning - это алгоритм проверки лица, который использует ограниченный обучающий набор для изучения функции сходства, которая количественно определяет, насколько разные два заданных изображения. Функция подобия, применяемая к двум изображениям, часто обозначается d(image 1,image 2).
+&#10230; Обучение одним выстрелом ― One Shot Learning - это алгоритм проверки лица, который использует ограниченный обучающий набор для изучения функции сходства, которая количественно определяет, насколько разные два заданных изображения. Функция подобия, применяемая к двум изображениям, часто обозначается d(image1,image2).
 
 <br>
 
@@ -597,16 +597,16 @@
 <br>
 
 
-**86. Style matrix ― The style matrix G[l] of a given layer l is a Gram matrix where each of its elements G[l]kk′ quantifies how correlated the channels k and k′ are. It is defined with respect to activations a[l] as follows:**
+**86. Style matrix ― The style matrix G^[l] of a given layer l is a Gram matrix where each of its elements Gkk'^[l] quantifies how correlated the channels k and k' are. It is defined with respect to activations a^[l] as follows:**
 
-&#10230; Матрица стиля ― Матрица стилей G[l] данного слоя l является определителем Грама, где каждый из его элементов G[l]kk′ количественно определяет степень корреляции каналов k и k′. Она определяется по отношению к активациям a[l] следующим образом:
+&#10230; Матрица стиля ― Матрица стилей G^[l] данного слоя l является определителем Грама, где каждый из его элементов Gkk'^[l] количественно определяет степень корреляции каналов k и k'. Она определяется по отношению к активациям a^[l] следующим образом:
 
 <br>
 
 
-**87. Remark: the style matrix for the style image and the generated image are noted G[l] (S) and G[l] (G) respectively.**
+**87. Remark: the style matrix for the style image and the generated image are noted G[l](S) and G[l](G) respectively.**
 
-&#10230; Примечание: матрица стиля для изображения стиля и сгенерированное изображение помечаются G[l] (S) и G[l] (G) соответственно.
+&#10230; Примечание: матрица стиля для изображения стиля и сгенерированное изображение помечаются G[l](S) и G[l](G) соответственно.
 
 <br>
 
@@ -620,7 +620,7 @@
 
 **89. Overall cost function ― The overall cost function is defined as being a combination of the content and style cost functions, weighted by parameters α,β, as follows:**
 
-&#10230; Функция общей стоимости ― функция общей стоимости определяется как комбинация функций стоимости контента и стиля, взвешенных параметрами α,β следующим образом:
+&#10230; Функция общей стоимости ― функция общей стоимости определяется как комбинация признаков стоимости контента и стиля, взвешенных параметрами α,β следующим образом:
 
 <br>
 
@@ -669,7 +669,7 @@
 
 **96. Inception Network ― This architecture uses inception modules and aims at giving a try at different convolutions in order to increase its performance through features diversification. In particular, it uses the 1×1 convolution trick to limit the computational burden.**
 
-&#10230; Inception Network ― Эта архитектура использует начальные модули и нацелена на то, чтобы попробовать различные свертки, чтобы повысить её производительность за счет диверсификации функций. В частности, она использует трюк свертки 1×1 для ограничения вычислительной нагрузки.
+&#10230; Inception Network ― Эта архитектура использует начальные модули и нацелена на то, чтобы попробовать различные свертки, чтобы повысить её производительность за счет диверсификации признаков. В частности, она использует трюк свертки 1×1 для ограничения вычислительной нагрузки.
 
 <br>
 
@@ -712,5 +712,12 @@
 **102. By X and Y**
 
 &#10230; По X и Y
+
+<br>
+
+
+**102. Downsamples feature map**
+
+&#10230; Карта признаков даунсэмплов
 
 <br>

@@ -93,7 +93,7 @@
 <br>
 
 
-**14. Probabilistic interpretation ― The probability that query f is evaluated to 1 can be seen as the proportion of models w of the knowledge base KB that satisfy f, i.e.:**
+**14. Probabilistic interpretation ― The probability that query f is evaluated to 1 can be seen as the proportion of models w of the knowledge base KB that satisfy f, <i>i.e.</i>:**
 
 &#10230; Вероятностная интерпретация ― Вероятность того, что запрос f будет оценен как 1, можно рассматривать как долю моделей w в базе знаний KB, которые удовлетворяют f, то есть:
 
@@ -121,9 +121,9 @@
 <br>
 
 
-**18. Relation between formulas and knowledge base - We define the following properties between the knowledge base KB and a new formula f:**
+**18. Relation between formulas and knowledge base ― We define the following properties between the knowledge base KB and a new formula f:**
 
-&#10230; Связь между формулами и базой знаний. Мы определяем следующие свойства между базой знаний KB и новой формулой f:
+&#10230; Связь между формулами и базой знаний ― Мы определяем следующие свойства между базой знаний KB и новой формулой f:
 
 <br>
 
@@ -305,7 +305,7 @@
 
 **44. [Resolution-based inference ― The resolution-based inference algorithm follows the following steps:, Step 1: Convert all formulas into CNF, Step 2: Repeatedly apply resolution rule, Step 3: Return unsatisfiable if and only if False, is derived]**
 
-&#10230; [Вывод на основе разрешения ― Алгоритм вывода на основе разрешении. Включает следующие шаги:, Шаг 1: Преобразовать все формулы в CNF, Шаг 2. Повторно применить правило разрешения, Шаг 3: Вернуть неудовлетворительно; если и только если False, выводится]
+&#10230; [Вывод на основе разрешения ― Алгоритм вывода на основе разрешении. Включает следующие шаги:, Шаг 1: Преобразовать все формулы в CNF, Шаг 2: Повторно применить правило разрешения, Шаг 3: Вернуть неудовлетворительно; если и только если False, выводится]
 
 <br>
 
@@ -366,7 +366,7 @@
 <br>
 
 
-**53. Modus ponens ― By noting x1,...,xn variables, a1,...,ak and a′1,...,a′k atomic formulas and by calling θ=Unify(a′1∧...∧a′k,a1∧...∧ak) the first-order logic version of modus ponens can be written:**
+**53. Modus ponens ― By noting x1,...,xn variables, a1,...,ak and a'1,...,a'k atomic formulas and by calling θ=Unify(a'1∧...∧a'k,a1∧...∧ak), the first-order logic version of modus ponens can be written:**
 
 &#10230; Modus ponens ― Обозначим переменные x1,...,xn, атомарные формулы a1,...,ak и a′1,...,a′k и вызвав θ=Unify(a′1∧...∧a′k,a1∧...∧ak) логическая версия modus ponens первого порядка может быть записана:
 

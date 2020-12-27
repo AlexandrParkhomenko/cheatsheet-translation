@@ -64,7 +64,7 @@
 
 **11. Learning rate ― The learning rate, often noted α or sometimes η, indicates at which pace the weights get updated. This can be fixed or adaptively changed. The current most popular method is called Adam, which is a method that adapts the learning rate.**
 
-&#10230; Скорость обучения - часто обозначаемая как α или иногда η, указывает, с какой скоростью обновляются веса. Её можно исправить или адаптивно изменить. Самый популярный в настоящее время метод называется Adam (адаптивные моменты), он адаптирует скорость обучения.
+&#10230; Скорость обучения ― часто обозначаемая как α или иногда η, указывает, с какой скоростью обновляются веса. Её можно исправить или адаптивно изменить. Самый популярный в настоящее время метод называется Adam (адаптивные моменты), он адаптирует скорость обучения.
 
 <br>
 
@@ -88,7 +88,7 @@
 
 **15. Step 1: Take a batch of training data.**
 
-&#10230; Шаг 1. Возьмите пакет обучающих данных.
+&#10230; Шаг 1: Возьмите пакет обучающих данных.
 
 <br>
 
@@ -107,13 +107,13 @@
 
 **18. Step 4: Use the gradients to update the weights of the network.**
 
-&#10230; Шаг 4. Использовать градиенты и обновить веса сети.
+&#10230; Шаг 4: Использовать градиенты и обновить веса сети.
 
 <br>
 
-**19. Dropout ― Dropout is a technique meant at preventing overfitting the training data by dropping out units in a neural network. In practice, neurons are either dropped with probability p or kept with probability 1−p**
+**19. Dropout ― Dropout is a technique meant to prevent overfitting the training data by dropping out units in a neural network. In practice, neurons are either dropped with probability $p$ or kept with probability $1-p.$**
 
-&#10230; Прореживание (Dropout) ― это метод, предназначенный для предотвращения переобучения на обучающих данных путем исключения блоков в нейронной сети. На практике нейроны либо отбрасываются с вероятностью p, либо сохраняются с вероятностью 1−p
+&#10230; Прореживание (Dropout) ― это метод, предназначенный для предотвращения переобучения на обучающих данных путем исключения блоков в нейронной сети. На практике нейроны либо отбрасываются с вероятностью $p$, либо сохраняются с вероятностью $1−p$.
 
 <br>
 
@@ -129,9 +129,9 @@
 
 <br>
 
-**22. Batch normalization ― It is a step of hyperparameter γ,β that normalizes the batch {xi}. By noting μB,σ2B the mean and variance of that we want to correct to the batch, it is done as follows:**
+**22. Batch normalization ― It is a step of hyperparameter $\gamma, \beta$ that normalizes the batch $\{x_i\}$. By noting $\mu_B, \sigma_B^2$ the mean and variance of that we want to correct to the batch, it is done as follows:**
 
-&#10230; Пакетная нормировка ― метод адаптивной перепараметризации γ,β, который нормирует пакет {xi}. Обозначим μB,σ2B как среднее значение и дисперсию, которые мы хотим скорректировать для пакета, это делается следующим образом:
+&#10230; Пакетная нормировка ― метод адаптивной перепараметризации $\gamma, \beta$, который нормирует пакет $\{x_i\}$. Обозначим $\mu_B, \sigma_B^2$ как среднее значение и дисперсию, которые мы хотим скорректировать для пакета, это делается следующим образом:
 
 <br>
 
@@ -243,15 +243,15 @@
 
 <br>
 
-**41. Bellman equation ― The optimal Bellman equations characterizes the value function Vπ∗ of the optimal policy π∗:**
+**41. Bellman equation ― The optimal Bellman equations characterizes the value function $V^{\pi^*}$ of the optimal policy $\pi^*$:**
 
-&#10230; Уравнение Беллмана - Оптимальные уравнения Беллмана характеризуют функцию цены Vπ∗ оптимальной политики π∗:
+&#10230; Уравнение Беллмана - Оптимальные уравнения Беллмана характеризуют функцию цены $V^{\pi^*}$ оптимальной политики $\pi^*$:
 
 <br>
 
-**42. Remark: we note that the optimal policy π∗ for a given state s is such that:**
+**42. Remark: we note that the optimal policy $\pi^*$ for a given state $s$ is such that:**
 
-&#10230; Примечание: отметим, что оптимальная политика π∗ для данного состояния s такова, что:
+&#10230; Примечание: отметим, что оптимальная политика $\pi^*$ для данного состояния $s$ такова, что:
 
 <br>
 
@@ -321,7 +321,7 @@
 
 <br>
 
-**54. [Reinforcement learning, Markov decision processes, Value/policy iteration, Approximate dynamic programming, Policy search]**
+**54. [Reinforcement learning, Markov decision processes, Value/policy iteration, Approximate dynamic     programming, Policy search]**
 
 &#10230; [Обучение с подкреплением, Марковский процесс принятия решений, Итерация ценности/политики, Приближенное динамическое программирование, Политика поиска]
 

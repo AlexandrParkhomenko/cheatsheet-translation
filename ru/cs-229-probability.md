@@ -26,9 +26,9 @@
 
 <br>
 
-**5. Axioms of probability For each event E, we denote P(E) as the probability of event E occuring.**
+**5. Axioms of probability ― For each event $E$, we denote $P(E)$ as the probability of event $E$ occurring.**
 
-&#10230; Аксиомы вероятности Для каждого события E мы обозначаем P(E) как вероятность наступления события E.
+&#10230; Аксиомы вероятности ― Для каждого события $E$ мы обозначаем $P(E)$ как вероятность наступления события $E$.
 
 <br>
 
@@ -164,9 +164,9 @@
 
 <br>
 
-**28. Variance ― The variance of a random variable, often noted Var(X) or σ2, is a measure of the spread of its distribution function. It is determined as follows:**
+**28. Variance ― The variance of a random variable, often noted Var(X) or σ^2, is a measure of the spread of its distribution function. It is determined as follows:**
 
-&#10230; Дисперсия ― Дисперсия случайной величины (Variance), которую часто называют Var(X) или σ2, является мерой разброса её функции распределения. Она определяется следующим образом:
+&#10230; Дисперсия ― Дисперсия случайной величины (Variance), которую часто называют Var(X) или σ^2, является мерой разброса её функции распределения. Она определяется следующим образом:
 
 <br>
 
@@ -242,7 +242,7 @@
 
 <br>
 
-**41. Covariance ― We define the covariance of two random variables X and Y, that we note σ2XY or more commonly Cov(X,Y), as follows:**
+**41. Covariance ― We define the covariance of two random variables X and Y, that we note σXY^2 or more commonly Cov(X,Y), as follows:**
 
 &#10230; Ковариация ― мы определяем ковариацию двух случайных величин X и Y, которые мы обозначаем σ2XY или более часто Cov(X,Y), следующим образом:
 
@@ -332,7 +332,7 @@
 
 <br>
 
-**56. Sample variance ― The sample variance of a random sample is used to estimate the true variance σ2 of a distribution, is often noted s2 or ^σ2 and is defined as follows:**
+**56. Sample variance ― The sample variance of a random sample is used to estimate the true variance σ^2 of a distribution, is often noted s^2 or ^σ^2 and is defined as follows:**
 
 &#10230; Выборочная дисперсия ― Дисперсия случайной выборки используется для оценки истинной дисперсии σ2 распределения, часто обозначается как s2 или ^σ2 и определяется следующим образом:
 

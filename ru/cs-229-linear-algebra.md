@@ -98,15 +98,15 @@
 
 <br>
 
-**17. Matrix-vector ― The product of matrix A∈Rm×n and vector x∈Rn is a vector of size Rn, such that:**
+**17. Matrix-vector ― The product of matrix A∈R^m×n and vector x∈R^n is a vector of size R^m, such that:**
 
-&#10230; Матрица-вектор ― Произведение матрицы A∈Rm×n и вектора x∈Rn - это вектор размера Rn, такой что:
+&#10230; Матрица-вектор ― Произведение матрицы A∈Rm×n и вектора x∈R^n - это вектор размера R^m, такой что:
 
 <br>
 
-**18. where aTr,i are the vector rows and ac,j are the vector columns of A, and xi are the entries of x.**
+**18. where ar,i^T are the vector rows and ac,j are the vector columns of A, and xi are the entries of x.**
 
-&#10230; где aTr,i - векторные строки, а ac,j - векторные столбцы A, а xi - элементы x.
+&#10230; где ar,i^T - векторные строки, а ac,j - векторные столбцы A, а xi - элементы x.
 
 <br>
 
@@ -116,9 +116,9 @@
 
 <br>
 
-**20. where aTr,i,bTr,i are the vector rows and ac,j,bc,j are the vector columns of A and B respectively**
+**20. where ar,i^T,br,i^T are the vector rows and ac,j,bc,j are the vector columns of A and B respectively.**
 
-&#10230; где aTr,i,bTr,i - векторные строки и ac,j,bc,j - векторные столбцы A и B соответственно
+&#10230; где ar,i^T,br,i^T - векторные строки и ac,j,bc,j - векторные столбцы A и B соответственно
 
 <br>
 
@@ -134,9 +134,9 @@
 
 <br>
 
-**23. Remark: for matrices A,B, we have (AB)T=BTAT**
+**23. Remark: for matrices $A,B$, we have $(AB)^T=B^TA^T$.**
 
-&#10230; Примечание: для матриц A,B имеем (AB)T=BTAT
+&#10230; Примечание: для матриц $A,B$ имеем $(AB)^T=B^TA^T$.
 
 <br>
 
@@ -188,9 +188,9 @@
 
 <br>
 
-**32. Symmetric decomposition ― A given matrix A can be expressed in terms of its symmetric and antisymmetric parts as follows:**
+**32. Symmetric decomposition ― A given matrix $A$ can be expressed in terms of its symmetric and antisymmetric parts as follows:**
 
-&#10230; Симметричное разложение ― Данная матрица A может быть выражена в терминах её симметричной и антисимметричной частей следующим образом:
+&#10230; Симметричное разложение ― Данная матрица $A$ может быть выражена в терминах её симметричной и антисимметричной частей следующим образом:
 
 <br>
 
@@ -302,9 +302,9 @@
 
 <br>
 
-**51. Hessian ― Let f:Rn→R be a function and x∈Rn be a vector. The hessian of f with respect to x is a n×n symmetric matrix, noted ∇2xf(x), such that:**
+**51. Hessian ― Let $f:\mathbb{R}^{n}\rightarrow\mathbb{R}$ be a function and $x\in\mathbb{R}^{n}$ be a vector. The hessian of $f$ with respect to $x$ is a $n\times n$ symmetric matrix, noted $\nabla_x^2 f(x)$, such that:**
 
-&#10230; Гессиан ― Пусть f:Rn→R функция, а x∈Rn - вектор. Гессиан f относительно x является симметричной матрицей размера n×n, обозначенной как ∇2xf(x), такой что:
+&#10230; Гессиан ― Пусть $f:\mathbb{R}^{n}\rightarrow\mathbb{R}$ функция, а $x\in\mathbb{R}^{n}$ - вектор. Гессиан $f$ относительно $x$ является симметричной матрицей размера $n\times n$, обозначенной как $\nabla_x^2 f(x)$, такой что:
 
 <br>
 

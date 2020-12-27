@@ -114,9 +114,9 @@
 <br>
 
 
-**17. Batch normalization ― It is a step of hyperparameter γ,β that normalizes the batch {xi}. By noting μB,σ2B the mean and variance of that we want to correct to the batch, it is done as follows:**
+**17. Batch normalization ― It is a step of hyperparameter $\gamma, \beta$ that normalizes the batch $\{x_i\}$. By noting $\mu_B, \sigma_B^2$ the mean and variance of that we want to correct to the batch, it is done as follows:**
 
-&#10230; Пакетная нормировка ― это шаг гиперпараметра γ,β , который нормирует пакет {xi}. Обозначим μB,σ2B среднее значение и дисперсию, которые мы хотим исправить для партии, это делается следующим образом:
+&#10230; Пакетная нормировка ― метод адаптивной перепараметризации $\gamma, \beta$, который нормирует пакет $\{x_i\}$. Обозначим $\mu_B, \sigma_B^2$ как среднее значение и дисперсию, которые мы хотим скорректировать для пакета, это делается следующим образом:
 
 <br>
 
@@ -156,16 +156,16 @@
 <br>
 
 
-**23. Loss function ― In order to quantify how a given model performs, the loss function L is usually used to evaluate to what extent the actual outputs y are correctly predicted by the model outputs z.**
+**23. Loss function ― In order to quantify how a given model performs, the loss function $L$ is usually used to evaluate to what extent the actual outputs $y$ are correctly predicted by the model outputs $z$.**
 
-&#10230; Функция потерь ― чтобы количественно оценить, как работает данная модель, функция потерь L обычно используется для оценки того, в какой степени фактические выходные данные y правильно предсказываются выходными данными модели z.
+&#10230; Функция потерь ― чтобы количественно оценить, как работает данная модель, функция потерь $L$ обычно используется для оценки того, в какой степени фактические выходные данные $y$ правильно предсказываются выходными данными модели $z$.
 
 <br>
 
 
-**24. Cross-entropy loss ― In the context of binary classification in neural networks, the cross-entropy loss L(z,y) is commonly used and is defined as follows:**
+**24. Cross-entropy loss ― In the context of binary classification in neural networks, the cross-entropy loss $L(z,y)$ is commonly used and is defined as follows:**
 
-&#10230; Функция потерь на основе перекрестной энтропии ― В контексте бинарной классификации в нейронных сетях обычно используется потеря кросс-энтропии L(z,y) , которая определяется следующим образом:
+&#10230; Функция потерь на основе перекрестной энтропии ― В контексте бинарной классификации в нейронных сетях обычно используется потеря кросс-энтропии $L(z,y)$, которая определяется следующим образом:
 
 <br>
 
@@ -268,9 +268,9 @@
 <br>
 
 
-**39. Learning rate ― The learning rate, often noted α or sometimes η, indicates at which pace the weights get updated. It can be fixed or adaptively changed. The current most popular method is called Adam, which is a method that adapts the learning rate.**
+**39. Learning rate ― The learning rate, often noted $\alpha$ or sometimes $\eta$, indicates at which pace the weights get updated. It can be fixed or adaptively changed. The current most popular method is called Adam, which is a method that adapts the learning rate.**
 
-&#10230; Скорость обучения ― Скорость обучения, часто обозначаемая α или иногда η, указывает, с какой скоростью обновляются веса. Её можно исправить или адаптивно изменить. Самый популярный в настоящее время метод называется Адам, он адаптирует скорость обучения.
+&#10230; Скорость обучения ― Скорость обучения, часто обозначаемая $\alpha$ или иногда $\eta$, указывает, с какой скоростью обновляются веса. Её можно исправить или адаптивно изменить. Самый популярный в настоящее время метод называется Адам, он адаптирует скорость обучения.
 
 <br>
 
@@ -298,7 +298,7 @@
 
 **43. [RMSprop, Root Mean Square propagation, Speeds up learning algorithm by controlling oscillations]**
 
-&#10230; [RMSprop, Среднеквадратичное распространение (Root Mean Square propagation), Ускоряет алгоритм обучения за счет управления колебаниями]
+&#10230; [RMSprop, Среднеквадратичное распространение, Ускоряет алгоритм обучения за счет управления колебаниями]
 
 <br>
 
@@ -324,16 +324,16 @@
 <br>
 
 
-**47. Dropout ― Dropout is a technique used in neural networks to prevent overfitting the training data by dropping out neurons with probability p>0. It forces the model to avoid relying too much on particular sets of features.**
+**47. Dropout ― Dropout is a technique used in neural networks to prevent overfitting the training data by dropping out neurons with probability $p &gt;0$. It forces the model to avoid relying too much on particular sets of features.**
 
-&#10230; Прореживание ― Dropout - это метод, используемый в нейронных сетях для предотвращения переобучения обучающих данных путем выпадения нейронов с вероятностью p>0. Это заставляет модель не слишком полагаться на определенные наборы функций.
+&#10230; Прореживание ― Dropout - это метод, используемый в нейронных сетях для предотвращения переобучения обучающих данных путем выпадения нейронов с вероятностью $p &gt;0$. Это заставляет модель не слишком полагаться на определенные наборы функций.
 
 <br>
 
 
-**48. Remark: most deep learning frameworks parametrize dropout through the 'keep' parameter 1−p.**
+**48. Remark: most deep learning frameworks parametrize dropout through the 'keep' parameter $1-p$.**
 
-&#10230; Примечание: большинство фреймворков глубокого обучения параметризуют исключение с помощью параметра 'keep' 1−p.
+&#10230; Примечание: большинство фреймворков глубокого обучения параметризуют исключение с помощью параметра 'keep' $1-p$.
 
 <br>
 
